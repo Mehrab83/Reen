@@ -1,0 +1,47 @@
+@import '../mixins/mixin';
+
+
+#cart{
+    padding: 50px 0px 70px;
+    .bcrumb{
+        text-align: center;
+        padding-bottom: 50px;
+        a{
+            @include local($fs: 20px, $fw: 700, $ff: $primary_ff, $clr: #666);
+            &:hover{
+                color: $primary_clr;
+            }
+        }
+        
+        .active{
+            color: $primary_clr;
+        }
+        
+        i{
+            font-size: 20px;
+            color: #999;
+            padding: 0px 10px;
+        }
+    }
+    p{
+        @include local($fs: 16px, $fw: 600, $ff: $primary_ff, $clr: #777);
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .icon{
+        margin: 0 auto;
+        width: 80px;
+        height: 80px;
+        
+    }
+    .return{
+        text-align: center;
+        padding-top: 30px;
+        a{
+            padding: 13px 29px;
+            background-color: #333;
+            @include local($fs: 14px, $fw: 600, $ff: $primary_ff, $clr: #fff);
+
+        }
+    }
+}

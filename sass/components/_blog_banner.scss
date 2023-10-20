@@ -1,0 +1,11 @@
+@import '../mixins/mixin';
+
+#blog_banner{
+    background-color: #eee;
+    padding: 70px 0px;
+    text-align: center;
+    p{
+        @include local($fs: 34px, $fw: 700, $ff: $primary_ff, $clr: #333);
+
+    }
+}

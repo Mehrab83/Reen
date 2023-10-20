@@ -1,0 +1,27 @@
+@import '../variables/variables';
+@mixin para{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: $primary_ff;
+    color: #333;
+
+}
+
+
+@mixin local($fs, $fw, $ff, $clr){
+    font-size: $fs;
+    font-weight: $fw;
+    font-family: $ff;
+    color: $clr;
+
+}
+
+
+
+@mixin transition{
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}

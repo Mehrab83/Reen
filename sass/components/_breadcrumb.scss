@@ -1,0 +1,24 @@
+@import '../mixins/mixin';
+
+#breadcrumb{
+    display: flex;
+    gap: 5px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+    a{
+        @include local($fs: 13px, $fw: 400, $ff: $primary_ff, $clr: #999);
+        &:hover{
+            color: $primary_clr;
+        }
+        
+    }
+    i{
+        font-size: 10px;
+        color: #999;
+
+    }
+    .active{
+        color: #333;
+    }
+}

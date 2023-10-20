@@ -1,0 +1,120 @@
+@import '../mixins/mixin';
+
+#widget {
+    padding-top: 30px;
+
+    .widget_1 {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 50px;
+        border: 2px solid $secondary_clr;
+
+        .item {
+            display: flex;
+            gap: 13px;
+            align-items: center;
+
+            i {
+                font-size: 35px;
+                color: $primary_clr;
+            }
+
+            .text {
+                p {
+                    @include local($fs: 14px, $fw: 600, $ff: $primary_ff, $clr: #333);
+                }
+
+                span {
+                    @include local($fs: 13px, $fw: 400, $ff: $primary_ff, $clr: #666);
+                }
+            }
+        }
+    }
+
+    .widget_2 {
+        padding: 50px 0;
+
+        .img_1 {
+            position: relative;
+            @include transition;
+
+            .text {
+                position: absolute;
+                top: 20%;
+                left: 7%;
+                max-width: 220px;
+                width: 100%;
+
+                h4 {
+                    @include local($fs: 18px, $fw: 400, $ff: $primary_ff, $clr: #333);
+                    padding-bottom: 7px;
+
+                    span {
+                        @include local($fs: 18px, $fw: 700, $ff: $primary_ff, $clr: $tertiary_clr);
+                    }
+                }
+
+                h3 {
+                    @include local($fs: 26px, $fw: 800, $ff: $primary_ff, $clr: #333);
+                    padding-bottom: 20px;
+
+                    span {
+                        @include local($fs: 26px, $fw: 400, $ff: $primary_ff, $clr: #333);
+                    }
+                }
+
+                p {
+                    @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #333);
+
+                    span {
+                        @include local($fs: 14px, $fw: 700, $ff: $primary_ff, $clr: $tertiary_clr);
+                    }
+                }
+            }
+
+            &:hover {
+                opacity: .9;
+            }
+        }
+
+        .img_2 {
+            position: relative;
+            @include transition;
+
+            .text {
+                position: absolute;
+                top: 20%;
+                left: 7%;
+                max-width: 220px;
+                width: 100%;
+
+                h4 {
+                    @include local($fs: 18px, $fw: 400, $ff: $primary_ff, $clr: white);
+                    padding-bottom: 7px;
+
+                }
+
+                h3 {
+                    @include local($fs: 26px, $fw: 800, $ff: $primary_ff, $clr: white);
+                    padding-bottom: 20px;
+
+                    span {
+                        @include local($fs: 26px, $fw: 400, $ff: $primary_ff, $clr: white);
+                    }
+                }
+
+                p {
+                    @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: white);
+
+                    span {
+                        @include local($fs: 14px, $fw: 700, $ff: $primary_ff, $clr: $tertiary_clr);
+                    }
+                }
+            }
+
+            &:hover {
+                opacity: .9;
+            }
+        }
+    }
+}

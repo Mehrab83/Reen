@@ -1,0 +1,91 @@
+@import '../mixins/mixin';
+
+#blog{
+    padding-bottom: 50px;
+    .blog_lists{
+        padding-top: 20px;
+        .list_1{
+            .image{
+                border-radius: 5px;
+                overflow: hidden;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                 img{
+                    
+                 }
+            }
+            .text{
+                padding-top: 20px;
+                text-align: center;
+                ul{
+                    display: flex;
+                    gap: 3px;
+                    justify-content: center;
+                    align-items: center;
+                    li{
+                        span{
+                            @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #999);
+
+                        }
+                        h5{
+                            @include local($fs: 14px, $fw: 600, $ff: $primary_ff, $clr: #333);
+                            cursor: pointer;
+                            &:hover{
+                                color: $primary_clr;
+                            }
+
+                        }
+                        p{
+                            @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #333);
+                            
+                        }
+                    }
+                }
+                p{
+                    @include local($fs: 15px, $fw: 600, $ff: $primary_ff, $clr: #333);
+                    cursor: pointer;
+                    &:hover{
+                        color: $primary_clr;
+                    }
+                }
+                a{
+                    @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #333);
+                    padding-top: 15px;
+                    position: relative;
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        -webkit-transform: translateX(-50%);
+                        -moz-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                        -o-transform: translateX(-50%);
+                        width: 0%;
+                        height: 2px;
+                        background-color: $primary_clr;
+                        transition: all linear .2s;
+                        -webkit-transition: all linear .2s;
+                        -moz-transition: all linear .2s;
+                        -ms-transition: all linear .2s;
+                        -o-transition: all linear .2s;
+                    }
+                    &:hover:after {
+                        width: 100%;
+                    }
+
+                    &:hover{
+                        color: $primary_clr;
+                    }
+
+                }
+            }
+            &:hover img {
+                transform: scale(1.08);
+            }
+        }
+    }
+}

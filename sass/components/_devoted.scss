@@ -1,0 +1,33 @@
+@import '../mixins/mixin';
+
+#devoted{
+    text-align: center;
+    padding-top: 86px;
+    padding-bottom: 90px;
+    h1{
+        @include local($fs: 40px, $fw: 700, $ff: $primary_ff, $clr: #222);
+        letter-spacing: 0px;
+        line-height: 48px;
+        margin: 0 auto;
+        width: 900px;
+        padding-bottom: 12px;
+    }
+    p{
+        @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #666);
+        line-height: 26px;
+        width: 565px;
+        margin: 0 auto;
+        padding-bottom: 43px;
+    }
+    .image{
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        overflow: hidden;
+         img{
+
+         }
+    }
+}

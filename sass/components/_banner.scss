@@ -1,0 +1,197 @@
+@import '../mixins/mixin';
+
+
+
+#banner{
+    position: relative;
+    
+    .banner_1{
+        // padding: 110px 0 110px;
+        .banner_img{
+            height: 568px;
+            display: flex;
+            align-items: center;
+            z-index: 999;
+        }
+        .banner_item{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .banner_text{
+               
+                h3{
+                    @include local($fs: 40px, $fw: 400, $ff: $primary_ff, $clr: #666);
+                    letter-spacing: -2px;
+                    text-align: right;
+                    span{
+                        position: relative;
+                        &::after{
+                            content: '';
+                            width: 100%;
+                            height: 4px;
+                            position: absolute;
+                            background-color: #f77c29;
+                            top: 78%;
+                            left: 0;
+                        }
+                    }
+                }
+                h4{
+                    @include local($fs: 50px, $fw: 700, $ff: $primary_ff, $clr: #333);
+                    text-align: right;
+                }
+                p{
+                    @include local($fs: 25px, $fw: 400, $ff: $primary_ff, $clr: #666);
+                    text-align: right;
+                    padding-bottom: 20px;
+                    span{
+                        @include local($fs: 25px, $fw: 800, $ff: $primary_ff, $clr: #f77c29);
+        
+                    }
+                }
+                .banner_btn{
+                    display: flex;
+                    justify-content: end;
+                    button{
+                        border: none;
+                        background: transparent;
+                        a{
+                            @include local($fs:14px,$fw:600,$ff:$primary_ff,$clr: #333);
+                            background: transparent;
+                            border: 2px solid black;
+                            padding: 13px 35px;
+                            @include transition;
+                            &:hover{
+                                color: white;
+                                background-color: black;
+                                border: 2px solid black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banner_2{
+        // padding: 110px 0 110px;
+        .banner_item{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .banner_text{
+                
+                h3{
+                    @include local($fs: 40px, $fw: 400, $ff: $primary_ff, $clr: #666);
+                    letter-spacing: -2px;
+                    text-align: left;
+                    span{
+                        color: #f77c29;
+                    }
+                }
+                h4{
+                    @include local($fs: 50px, $fw: 700, $ff: $primary_ff, $clr: #333);
+                    text-align: left;
+                }
+                p{
+                    @include local($fs: 25px, $fw: 400, $ff: $primary_ff, $clr: #666);
+                    text-align: left;
+                    padding-bottom: 20px;
+                    span{
+                        @include local($fs: 25px, $fw: 800, $ff: $primary_ff, $clr: #f77c29);
+        
+                    }
+                }
+                .banner_btn{
+                    display: flex;
+                    justify-content: start;
+                    button{
+                        border: none;
+                        background: transparent;
+                        a{
+                            @include local($fs:14px,$fw:600,$ff:$primary_ff,$clr: #333);
+                            background: transparent;
+                            border: 2px solid black;
+                            padding: 13px 35px;
+                            @include transition;
+                            &:hover{
+                                color: white;
+                                background-color: black;
+                                border: 2px solid black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .banner_img{
+            height: 568px;
+        }
+    }
+    .banner_3{
+        // padding: 110px 0 110px;
+        .banner_img{
+            height: 568px;
+        }
+        .banner_item{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .banner_text{
+               
+                h3{
+                    @include local($fs: 40px, $fw: 400, $ff: $primary_ff, $clr: #666);
+                    letter-spacing: -2px;
+                    text-align: right;
+                    
+                }
+                h4{
+                    @include local($fs: 50px, $fw: 700, $ff: $primary_ff, $clr: #333);
+                    text-align: right;
+                    padding-bottom: 20px;
+                }
+                p{
+                    @include local($fs: 25px, $fw: 400, $ff: $primary_ff, $clr: #666);
+                    text-align: right;
+                    
+                    span{
+                        @include local($fs: 25px, $fw: 800, $ff: $primary_ff, $clr: #f77c29);
+        
+                    }
+                }
+                .banner_btn{
+                    display: flex;
+                    justify-content: end;
+                    button{
+                        border: none;
+                        background: transparent;
+                        a{
+                            @include local($fs:14px,$fw:600,$ff:$primary_ff,$clr: #333);
+                            background: transparent;
+                            border: 2px solid black;
+                            padding: 13px 35px;
+                            @include transition;
+                            &:hover{
+                                color: white;
+                                background-color: black;
+                                border: 2px solid black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .prevArrow{
+        position: absolute;
+        top: 284px;
+        left: 150px;
+        z-index: 99;
+        
+    }
+    .nextArrow{
+        position: absolute;
+        top: 284px;
+        right: 150px;
+
+    }
+}

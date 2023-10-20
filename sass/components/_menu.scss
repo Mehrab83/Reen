@@ -1,0 +1,690 @@
+@import '../mixins/mixin';
+
+
+#main_menu {
+    border-top: 2px solid $secondary_clr;
+    border-bottom: 2px solid $secondary_clr;
+    background-color: #fff;
+
+    .browse_menu {
+        position: relative;
+        z-index: 999;
+        .text_chev {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #f1f1f1;
+
+            h4 {
+                @include local($fs: 14px, $fw: 600, $ff: $primary_ff, $clr: #333);
+
+                i {
+                    font-size: 16px;
+                }
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+
+                i {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .menu_list {
+            background-color: #fff;
+            position: absolute;
+            padding: 10px;
+            width: 100%;
+            top: 100%;
+            left: 0;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+
+            .menu_items {
+                li {
+                    padding: 10px;
+                    border-bottom: 2px solid $secondary_clr;
+                    position: relative;
+
+                    a {
+                        @include local($fs: 13px, $fw: 500, $ff: $primary_ff, $clr: #333);
+
+                        i {
+                            padding-right: 3px;
+                        }
+
+                        &:hover {
+                            color: $primary_clr;
+                        }
+                    }
+
+                    .fashion_menu {
+                        position: absolute;
+                        display: flex;
+                        top: 0;
+                        left: 94%;
+                        background-color: #fff;
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all linear .1s;
+                        -webkit-transition: all linear .1s;
+                        -moz-transition: all linear .1s;
+                        -ms-transition: all linear .1s;
+                        -o-transition: all linear .1s;
+
+                        .fashion_list {
+                            width: 270px;
+                            padding: 10px;
+
+                            li {
+                                border-bottom: none;
+
+                                a {
+                                    @include local($fs: 16px, $fw: 400, $ff: $primary_ff, $clr: #666);
+
+                                    h6 {
+                                        @include local($fs: 16px, $fw: 600, $ff: $primary_ff, $clr: #333)
+                                    }
+
+                                    &:hover {
+                                        color: $primary_clr;
+                                    }
+                                }
+                            }
+
+                            .header_border {
+                                border-bottom: 2px solid $secondary_clr;
+                            }
+                        }
+
+                        .fashion_img {
+                            width: 280px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    &:hover .fashion_menu {
+                        visibility: visible;
+                        opacity: 1;
+                        left: 104%;
+                    }
+
+                    .home_menu {
+                        position: absolute;
+                        top: 0;
+                        left: 94%;
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+                        display: flex;
+                        width: 785px;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all linear .1s;
+                        -webkit-transition: all linear .1s;
+                        -moz-transition: all linear .1s;
+                        -ms-transition: all linear .1s;
+                        -o-transition: all linear .1s;
+
+                        .home_items {
+                            display: flex;
+                            flex-wrap: wrap;
+                            background-color: #fff;
+                            width: 550px;
+                            height: 579px;
+
+                            .home_list {
+                                width: 270px;
+                                padding: 10px;
+
+                                li {
+                                    border-bottom: none;
+
+                                    a {
+                                        @include local($fs: 16px, $fw: 400, $ff: $primary_ff, $clr: #666);
+
+                                        h6 {
+                                            @include local($fs: 16px, $fw: 600, $ff: $primary_ff, $clr: #333)
+                                        }
+
+                                        &:hover {
+                                            color: $primary_clr;
+                                        }
+                                    }
+                                }
+
+                                .header_border {
+                                    border-bottom: 2px solid $secondary_clr;
+                                }
+                            }
+
+                        }
+                    }
+
+                    &:hover .home_menu {
+                        visibility: visible;
+                        opacity: 1;
+                        left: 104%;
+                    }
+
+                    .elect_menu {
+                        position: absolute;
+                        top: 0;
+                        left: 94%;
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+                        display: flex;
+                        width: 785px;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all linear .1s;
+                        -webkit-transition: all linear .1s;
+                        -moz-transition: all linear .1s;
+                        -ms-transition: all linear .1s;
+                        -o-transition: all linear .1s;
+
+                        .elect_items {
+                            display: flex;
+                            flex-wrap: wrap;
+                            background-color: #fff;
+                            width: 550px;
+                            height: 490px;
+
+                            .elect_list {
+                                width: 270px;
+                                padding: 10px;
+
+                                li {
+                                    border-bottom: none;
+
+                                    a {
+                                        @include local($fs: 16px, $fw: 400, $ff: $primary_ff, $clr: #666);
+
+                                        h6 {
+                                            @include local($fs: 16px, $fw: 600, $ff: $primary_ff, $clr: #333);
+
+                                            &:hover {
+                                                color: $primary_clr;
+                                            }
+                                        }
+
+                                        &:hover {
+                                            color: $primary_clr;
+                                        }
+                                    }
+                                }
+
+                                .header_border {
+                                    border-bottom: 2px solid $secondary_clr;
+                                }
+                            }
+
+                        }
+                    }
+
+                    &:hover .elect_menu {
+                        visibility: visible;
+                        opacity: 1;
+                        left: 104%;
+                    }
+
+                    .furn_items {
+                        position: absolute;
+                        top: 0;
+                        left: 94%;
+                        background: #fff;
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+                        display: flex;
+                        padding: 10px;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all linear .1s;
+                        -webkit-transition: all linear .1s;
+                        -moz-transition: all linear .1s;
+                        -ms-transition: all linear .1s;
+                        -o-transition: all linear .1s;
+
+                        .furn_item {
+
+                            .furn_item1 {
+                                display: flex;
+
+                                .furn_list {
+                                    width: 270px;
+                                    padding: 10px;
+
+                                    li {
+                                        border-bottom: none;
+
+                                        a {
+                                            @include local($fs: 16px, $fw: 400, $ff: $primary_ff, $clr: #666);
+
+                                            h6 {
+                                                @include local($fs: 16px, $fw: 600, $ff: $primary_ff, $clr: #333);
+
+                                                &:hover {
+                                                    color: $primary_clr;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .header_border {
+                                        border-bottom: 2px solid $secondary_clr;
+                                    }
+                                }
+                            }
+
+                            .furn_img {
+                                width: 540px;
+                                margin: 10px;
+                                border-radius: 5px;
+                                -webkit-border-radius: 5px;
+                                -moz-border-radius: 5px;
+                                -ms-border-radius: 5px;
+                                -o-border-radius: 5px;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+
+                    &:hover .furn_items {
+                        visibility: visible;
+                        opacity: 1;
+                        left: 104%;
+                    }
+                }
+            }
+
+            .categories {
+                a {
+                    @include local($fs: 13px, $fw: 600, $ff: $primary_ff, $clr: $primary_clr);
+                    padding: 10px;
+
+                    &:hover {
+                        color: $primary_clr;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
+        .navbar-nav {
+            .nav-item {
+                position: relative;
+                z-index: 999;
+
+                .nav-link {
+                    @include local($fs: 15px, $fw: 600, $ff: $primary_ff, $clr: #333);
+                    padding: 5px 15px;
+                    position: relative;
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        top: 82%;
+                        left: 20%;
+                        // transform: translateX(-50%);
+                        // -webkit-transform: translateX(-50%);
+                        // -moz-transform: translateX(-50%);
+                        // -ms-transform: translateX(-50%);
+                        // -o-transform: translateX(-50%);
+                        width: 0%;
+                        height: 2px;
+                        background-color: $primary_clr;
+                        transition: all linear .2s;
+                        -webkit-transition: all linear .2s;
+                        -moz-transition: all linear .2s;
+                        -ms-transition: all linear .2s;
+                        -o-transition: all linear .2s;
+                    }
+                    &:hover:after {
+                        width: 61%;
+                    }
+
+                    &:hover {
+                        color: $primary_clr;
+                    }
+                }
+
+                .active {
+                    @include local($fs: 15px, $fw: 600, $ff: $primary_ff, $clr:$primary_clr);
+                    position: relative;
+
+                    &::before {
+
+
+                        content: "";
+                        position: absolute;
+                        bottom: 12%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 62%;
+                        height: 2px;
+                        background-color: #336699;
+                        -webkit-transform: translateX(-50%);
+                        -moz-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                        -o-transform: translateX(-50%);
+
+
+                    }
+                }
+
+                .shop_menu {
+                    position: absolute;
+                    top: 90%;
+                    left: 0;
+                    padding: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+                    background-color: #fff;
+                    display: flex;
+                    gap: 20px;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all linear .1s;
+                    -webkit-transition: all linear .1s;
+                    -moz-transition: all linear .1s;
+                    -ms-transition: all linear .1s;
+                    -o-transition: all linear .1s;
+
+                    .shop_list {
+                        width: 210px;
+
+                        li {
+                            padding: 10px;
+
+                            h5 {
+                                @include local($fs: 17px, $fw: 600, $ff: $primary_ff, $clr:#333);
+                            }
+
+                            a {
+                                @include local($fs: 16px, $fw: 400, $ff: $primary_ff, $clr:#666);
+
+                                &:hover {
+                                    color: $primary_clr;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover .shop_menu {
+                    visibility: visible;
+                    opacity: 1;
+                    top: 100%;
+                }
+
+                .vendor_menu {
+                    position: absolute;
+                    top: 90%;
+                    left: 0;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+                    background-color: #fff;
+                    padding: 10px;
+                    width: 420px;
+                    display: flex;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all linear .1s;
+                    -webkit-transition: all linear .1s;
+                    -moz-transition: all linear .1s;
+                    -ms-transition: all linear .1s;
+                    -o-transition: all linear .1s;
+                    flex-wrap: wrap;
+
+                    .vendor_list {
+                        width: 200px;
+
+                        li {
+                            padding: 10px;
+
+                            h5 {
+                                @include local($fs: 17px, $fw: 600, $ff: $primary_ff, $clr:#333);
+                            }
+
+                            a {
+                                @include local($fs: 16px, $fw: 400, $ff: $primary_ff, $clr:#666);
+
+                                &:hover {
+                                    color: $primary_clr;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover .vendor_menu {
+                    visibility: visible;
+                    opacity: 1;
+                    top: 100%;
+                }
+
+                .blog_menu {
+                    position: absolute;
+                    top: 90%;
+                    left: 0;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+                    background-color: #fff;
+                    padding: 10px;
+
+                    display: flex;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all linear .1s;
+                    -webkit-transition: all linear .1s;
+                    -moz-transition: all linear .1s;
+                    -ms-transition: all linear .1s;
+                    -o-transition: all linear .1s;
+
+                    .blog_list {
+                        width: 200px;
+
+                        li {
+                            padding: 10px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            a {
+                                @include local($fs: 16px, $fw: 400, $ff: $primary_ff, $clr:#666);
+
+                                &:hover {
+                                    color: $primary_clr;
+                                }
+                            }
+
+                            i {
+                                font-size: 10px;
+                            }
+                        }
+
+                    }
+                }
+
+                &:hover .blog_menu {
+                    visibility: visible;
+                    opacity: 1;
+                    top: 100%;
+                }
+                .pages_menu {
+                    position: absolute;
+                    top: 90%;
+                    left: 0;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+                    background-color: #fff;
+                    padding: 10px;
+
+                    display: flex;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all linear .1s;
+                    -webkit-transition: all linear .1s;
+                    -moz-transition: all linear .1s;
+                    -ms-transition: all linear .1s;
+                    -o-transition: all linear .1s;
+
+                    .pages_list {
+                        width: 200px;
+
+                        li {
+                            padding: 10px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            a {
+                                @include local($fs: 16px, $fw: 400, $ff: $primary_ff, $clr:#666);
+
+                                &:hover {
+                                    color: $primary_clr;
+                                }
+                            }
+
+                            i {
+                                font-size: 10px;
+                            }
+                        }
+
+                    }
+                }
+
+                &:hover .pages_menu {
+                    visibility: visible;
+                    opacity: 1;
+                    top: 100%;
+                }
+            }
+        }
+    }
+
+    .track {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 15px 0;
+
+        i {
+            font-size: 20px;
+            padding-right: 10px;
+        }
+
+        p {
+            @include local($fs: 15px, $fw: 500, $ff: $primary_ff, $clr: #333);
+        }
+
+    }
+
+    .deals {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+
+        i {
+            font-size: 20px;
+            padding-right: 10px;
+        }
+
+        p {
+            @include local($fs: 15px, $fw: 500, $ff: $primary_ff, $clr: #333);
+        }
+
+    }
+}
+
+#main_menu.scrolling{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 500ms ease-out;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+    .browse_menu{
+        .text_chev{
+            background-color: #fff;
+            transition: all linear .1s;
+            -webkit-transition: all linear .1s;
+            -moz-transition: all linear .1s;
+            -ms-transition: all linear .1s;
+            -o-transition: all linear .1s;
+            border-left: 1px solid #eee;
+            border-right: 1px solid #eee;
+            &:hover{
+                background-color: #f1f1f1;
+            }
+        }
+        .menu_list{
+            visibility: hidden;
+            opacity: 0;
+            top: 90%;
+            transition: all linear .1s;
+            -webkit-transition: all linear .1s;
+            -moz-transition: all linear .1s;
+            -ms-transition: all linear .1s;
+            -o-transition: all linear .1s;
+           
+        }
+
+        &:hover .menu_list{
+            visibility: visible;
+            opacity: 1;
+            top: 100%;
+        }
+    }
+}
+
+#main_menu.collapsed{
+    .browse_menu{
+        height: 100%;
+        .text_chev{
+            height: 100%;
+            background-color: #fff;
+            transition: all linear .1s;
+            -webkit-transition: all linear .1s;
+            -moz-transition: all linear .1s;
+            -ms-transition: all linear .1s;
+            -o-transition: all linear .1s;
+            border-left: 1px solid #eee;
+            border-right: 1px solid #eee;
+            &:hover{
+                background-color: #f1f1f1;
+            }
+        }
+        .menu_list{
+            visibility: hidden;
+            opacity: 0;
+            top: 90%;
+            transition: all linear .1s;
+            -webkit-transition: all linear .1s;
+            -moz-transition: all linear .1s;
+            -ms-transition: all linear .1s;
+            -o-transition: all linear .1s;
+           
+        }
+    
+        &:hover .menu_list{
+            visibility: visible;
+            opacity: 1;
+            top: 100%;
+        }
+    }
+
+}
+#main_menu.sticky{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    transition: all 500ms ease-out;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+}

@@ -1,0 +1,173 @@
+@import '../mixins/mixin';
+
+#vendor{
+    padding-bottom: 30px;
+    .filter_sort{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            button{
+                @include local($fs:14px,$fw:700,$ff:$primary_ff,$clr: #336699);
+                border: 2px solid #336699;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+                &:hover{
+                    background-color: $primary_clr;
+                    color: #fff;
+                }
+            }
+            span{
+                @include local($fs:14px,$fw:400,$ff:$primary_ff,$clr: #222);
+
+            }
+        }
+        .sort{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    .drop{
+        
+        border: none;
+        box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+        .card-body{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 10px;
+            border: none;
+            margin-top: 30px;
+            #user_email{
+                padding: 10px 16px;
+                width: 90%;
+                border: 1px solid #ccc;
+                border-radius: 5px ;
+                -webkit-border-radius: 5px ;
+                -moz-border-radius: 5px ;
+                -ms-border-radius: 5px ;
+                -o-border-radius: 5px ;
+            }
+            button{
+                background-color: $primary_clr;
+                padding: 14px 21px;
+                border: none;
+                width: 10%;
+                @include local($fs: 14px, $fw: 600, $ff: $primary_ff, $clr: #fff);
+                border-radius: 5px ;
+                -webkit-border-radius: 5px ;
+                -moz-border-radius: 5px ;
+                -ms-border-radius: 5px ;
+                -o-border-radius: 5px ;
+                transition: all linear .2s;
+                -webkit-transition: all linear .2s;
+                -moz-transition: all linear .2s;
+                -ms-transition: all linear .2s;
+                -o-transition: all linear .2s;
+                &:hover{
+                    background-color: #454545;
+                }
+            }
+        }
+    }
+    .collapse{
+        &:not(.show) {
+            display: none;
+        }
+    }
+      
+    .collapsing {
+        height: 0;
+        overflow: hidden;
+        transition: $transition-collapse;
+        -webkit-transition: $transition-collapse;
+        -moz-transition: $transition-collapse;
+        -ms-transition: $transition-collapse;
+        -o-transition: $transition-collapse;
+    }
+    .vendors{
+        padding-top: 30px;
+        .vendor_1{
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+            border-radius: 7px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            -o-border-radius: 7px;
+            overflow: hidden;
+            position: relative;
+            @include transition;
+            .name{
+                border-bottom: solid 1px #eee;
+                .image{
+                    padding: 25px 25px 113px;
+                    .text{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        a{
+                            @include local($fs:20px,$fw:600,$ff:$primary_ff,$clr: #526b6f);
+
+                        }
+                        span{
+                            @include local($fs:13px,$fw:400,$ff:$primary_ff,$clr: #748082);
+
+                        }
+                    }
+                }
+            }
+            .visit{
+                padding: 26px 20px;
+                a{
+                    @include local($fs:14px,$fw:600,$ff:$primary_ff,$clr: #333)
+                }
+                .profilep{
+                    position: absolute;
+                    top: 60%;
+                    right: -5%;
+                    transform: translateX(-50%);
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    background-color: #ff9742;
+                    -webkit-transform: translateX(-50%);
+                    -moz-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    -o-transform: translateX(-50%);
+                    .icon{
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        overflow: hidden;
+                        @include transition;
+                        
+                        
+                    }
+                }
+            }
+            &:hover .icon{
+                transform: translateY(-10px);
+                -webkit-transform: translateY(-10px);
+                -moz-transform: translateY(-10px);
+                -ms-transform: translateY(-10px);
+                -o-transform: translateY(-10px);
+            }
+        }
+    }
+
+}

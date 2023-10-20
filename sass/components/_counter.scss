@@ -1,0 +1,21 @@
+@import '../mixins/mixin';
+
+#counter_up{
+    .achievements{
+        text-align: center;
+        h1{
+            @include local($fs: 60px, $fw: 800, $ff: $primary_ff, $clr: #ccc);
+        }
+        h2{ 
+            @include local($fs: 20px, $fw: 700, $ff: $primary_ff, $clr: #333);
+            padding-top: 15px;
+            padding-bottom: 12px;
+        }
+        p{
+            @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #666);
+            width: 259px;
+            margin: 0 auto;
+            padding-bottom: 90px;
+        }
+    }
+}

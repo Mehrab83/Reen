@@ -1,0 +1,13 @@
+@import '../mixins/mixin';
+
+#client {
+    padding-bottom: 50px;
+
+    .client_list {
+        padding-top: 20px;
+
+        .image {
+            border: 1px solid #eee;
+        }
+    }
+}

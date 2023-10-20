@@ -1,0 +1,590 @@
+@import '../mixins/mixin';
+
+#account {
+    padding: 50px 0px;
+
+    .sign {
+        position: relative;
+        margin: 0 auto;
+        width: 500px;
+        padding: 35px 50px 25px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+
+
+        .nav-link {
+            width: 50%;
+            border: none;
+            font-size: 16px;
+            font-weight: 700;
+            color: #333;
+            font-family: $primary_ff;
+            border-bottom: 2px solid $secondary_clr;
+        }
+
+        .nav-link.active {
+            border-bottom: 2px solid $primary_clr;
+        }
+
+        .close_btn {
+            background: transparent;
+            border: none;
+            position: absolute;
+            top: -25px;
+            right: 0;
+        }
+
+        .tab-content {
+            padding-top: 30px;
+
+            .tab-pane {
+                padding-bottom: 0%;
+
+                .sign_in {
+                    form {
+                        label {
+                            display: block;
+                            @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #666);
+                            padding-bottom: 5px;
+                        }
+
+                        #password {
+                            width: 100%;
+                            border-radius: 2px;
+                            border: 1px solid #EEE;
+                            padding: 10px 20px;
+                            transition: all linear .2s;
+                            -webkit-transition: all linear .2s;
+                            -moz-transition: all linear .2s;
+                            -ms-transition: all linear .2s;
+                            -o-transition: all linear .2s;
+                            margin-bottom: 30px;
+
+                            &:focus {
+                                border: 1px solid #333;
+                            }
+
+                        }
+
+                        #mail {
+                            width: 100%;
+                            border-radius: 2px;
+                            border: 1px solid #EEE;
+                            padding: 10px 20px;
+                            transition: all linear .2s;
+                            -webkit-transition: all linear .2s;
+                            -moz-transition: all linear .2s;
+                            -ms-transition: all linear .2s;
+                            -o-transition: all linear .2s;
+                            margin-bottom: 30px;
+
+                            &:focus {
+                                border: 1px solid #333;
+                            }
+
+                        }
+
+                        .pass {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding-bottom: 25px;
+
+                            .rem {
+                                .custom {
+                                    @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #333);
+                                    display: block;
+                                    position: relative;
+                                    padding-left: 25px;
+                                    padding-bottom: 0px;
+                                    cursor: pointer;
+                                    -webkit-user-select: none;
+                                    -moz-user-select: none;
+                                    -ms-user-select: none;
+                                    user-select: none;
+                                }
+
+                                /* Hide the browser's default checkbox */
+                                .custom input {
+                                    position: absolute;
+                                    opacity: 0;
+                                    cursor: pointer;
+                                    height: 0;
+                                    width: 0;
+                                }
+
+                                /* Create a custom checkbox */
+                                .checkmark {
+                                    position: absolute;
+                                    top: 1px;
+                                    left: 0;
+                                    height: 17px;
+                                    width: 17px;
+                                    //background-color: #eee;
+                                    border: 1px solid #ccc;
+                                    border-radius: 3px;
+                                    -webkit-border-radius: 3px;
+                                    -moz-border-radius: 3px;
+                                    -ms-border-radius: 3px;
+                                    -o-border-radius: 3px;
+                                }
+
+                                /* On mouse-over, add a grey background color */
+
+
+                                /* When the checkbox is checked, add a blue background */
+                                .custom input:checked~.checkmark {
+                                    background-color: #333;
+                                    border: 1px solid #333;
+                                }
+
+                                /* Create the checkmark/indicator (hidden when not checked) */
+                                .checkmark:after {
+                                    content: "";
+                                    position: absolute;
+                                    display: none;
+                                }
+
+                                /* Show the checkmark when checked */
+                                .custom input:checked~.checkmark:after {
+                                    display: block;
+                                }
+
+                                /* Style the checkmark/indicator */
+                                .custom .checkmark:after {
+                                    left: 5.5px;
+                                    top: 2px;
+                                    width: 5px;
+                                    height: 10px;
+                                    border: solid white;
+                                    border-width: 0 3px 3px 0;
+                                    -webkit-transform: rotate(45deg);
+                                    -ms-transform: rotate(45deg);
+                                    transform: rotate(45deg);
+                                }
+                            }
+
+                            a {
+                                color: #A94442;
+                                font-size: 12px;
+                                font-family: Poppins;
+                                line-height: 12px;
+                            }
+
+                        }
+
+                        #submit {
+                            width: 100%;
+                            padding: 10px 0px;
+                            @include local($fs: 14px, $fw: 600, $ff: $primary_ff, $clr: #fff);
+                            background: $primary_clr;
+                            border: 1px solid $primary_clr;
+                            transition: all linear .2s;
+                            -webkit-transition: all linear .2s;
+                            -moz-transition: all linear .2s;
+                            -ms-transition: all linear .2s;
+                            -o-transition: all linear .2s;
+
+                            &:hover {
+                                background-color: #3c78b3;
+                            }
+                        }
+
+                        p {
+                            @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #666);
+                            text-align: center;
+                            padding-top: 25px;
+                            padding-bottom: 25px;
+                        }
+
+                        .socials {
+                            text-align: center;
+
+                            a {
+                                width: 32px;
+                                height: 32px;
+                                padding-top: 2px;
+                                border-radius: 50%;
+                                -webkit-border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -ms-border-radius: 50%;
+                                -o-border-radius: 50%;
+                                transition: all linear .2s;
+                                -webkit-transition: all linear .2s;
+                                -moz-transition: all linear .2s;
+                                -ms-transition: all linear .2s;
+                                -o-transition: all linear .2s;
+                            }
+
+                            .fb {
+                                border: 1px solid #1B4F9B;
+
+                                i {
+                                    color: #1B4F9B;
+                                    font-size: 13px;
+                                    transition: all linear .2s;
+                                    -webkit-transition: all linear .2s;
+                                    -moz-transition: all linear .2s;
+                                    -ms-transition: all linear .2s;
+                                    -o-transition: all linear .2s;
+                                }
+
+                                &:hover {
+                                    background-color: #1B4F9B;
+                                }
+
+                                &:hover i {
+                                    color: #fff;
+                                }
+                            }
+
+                            .tw {
+                                border: 1px solid #00ADEF;
+                                margin: 0 5px;
+
+                                i {
+                                    color: #00ADEF;
+                                    font-size: 13px;
+                                    transition: all linear .2s;
+                                    -webkit-transition: all linear .2s;
+                                    -moz-transition: all linear .2s;
+                                    -ms-transition: all linear .2s;
+                                    -o-transition: all linear .2s;
+                                }
+
+                                &:hover {
+                                    background-color: #00ADEF;
+                                }
+
+                                &:hover i {
+                                    color: #fff;
+                                }
+                            }
+
+                            .go {
+                                border: 1px solid #DD4B39;
+
+                                i {
+                                    color: #DD4B39;
+                                    font-size: 13px;
+                                    transition: all linear .2s;
+                                    -webkit-transition: all linear .2s;
+                                    -moz-transition: all linear .2s;
+                                    -ms-transition: all linear .2s;
+                                    -o-transition: all linear .2s;
+                                }
+
+                                &:hover {
+                                    background-color: #DD4B39;
+                                }
+
+                                &:hover i {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .sign_up {
+                    form {
+                        label {
+                            display: block;
+                            @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #666);
+                            padding-bottom: 5px;
+                        }
+
+                        #password {
+                            width: 100%;
+                            border-radius: 2px;
+                            border: 1px solid #EEE;
+                            padding: 10px 20px;
+                            transition: all linear .2s;
+                            -webkit-transition: all linear .2s;
+                            -moz-transition: all linear .2s;
+                            -ms-transition: all linear .2s;
+                            -o-transition: all linear .2s;
+                            margin-bottom: 30px;
+
+                            &:focus {
+                                border: 1px solid #333;
+                            }
+
+                        }
+
+                        #mail {
+                            width: 100%;
+                            border-radius: 2px;
+                            border: 1px solid #EEE;
+                            padding: 10px 20px;
+                            transition: all linear .2s;
+                            -webkit-transition: all linear .2s;
+                            -moz-transition: all linear .2s;
+                            -ms-transition: all linear .2s;
+                            -o-transition: all linear .2s;
+                            margin-bottom: 30px;
+
+                            &:focus {
+                                border: 1px solid #333;
+                            }
+                        }
+
+                        .custom {
+                            display: block;
+                            position: relative;
+                            padding-left: 26px;
+                            margin-bottom: 12px;
+                            cursor: pointer;
+                            @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #666);
+
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                        }
+
+                        /* Hide the browser's default radio button */
+                        .custom input {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                        }
+
+                        /* Create a custom radio button */
+                        .checkmark {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 18px;
+                            width: 18px;
+                            background-color: #fff;
+                            border: 1px solid #ccc;
+                            border-radius: 50%;
+                        }
+
+                        /* On mouse-over, add a grey background color */
+                        .custom:hover input~.checkmark {
+                            // background-color: #ccc;
+                        }
+
+                        /* When the radio button is checked, add a blue background */
+                        .custom input:checked~.checkmark {
+                            background-color: #fff;
+                            border: 1px solid #333;
+                        }
+
+                        /* Create the indicator (the dot/circle - hidden when not checked) */
+                        .checkmark:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+
+                        /* Show the indicator (dot/circle) when checked */
+                        .custom input:checked~.checkmark:after {
+                            display: block;
+                        }
+
+                        /* Style the indicator (dot/circle) */
+                        .custom .checkmark:after {
+                            top: 4px;
+                            left: 5px;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: black;
+                        }
+
+                        p {
+                            @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #666);
+                            padding-bottom: 20px;
+                        }
+
+                        .customm {
+                            @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #333);
+                            display: block;
+                            position: relative;
+                            padding-left: 25px;
+                            padding-bottom: 0px;
+                            cursor: pointer;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                        }
+
+                        /* Hide the browser's default checkbox */
+                        .customm input {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+                        }
+
+                        /* Create a custom checkbox */
+                        .checkmarkk {
+                            position: absolute;
+                            top: 1px;
+                            left: 0;
+                            height: 17px;
+                            width: 17px;
+                            //background-color: #eee;
+                            border: 1px solid #ccc;
+                            border-radius: 3px;
+                            -webkit-border-radius: 3px;
+                            -moz-border-radius: 3px;
+                            -ms-border-radius: 3px;
+                            -o-border-radius: 3px;
+                        }
+
+                        /* On mouse-over, add a grey background color */
+
+
+                        /* When the checkbox is checked, add a blue background */
+                        .customm input:checked~.checkmarkk {
+                            background-color: #333;
+                            border: 1px solid #333;
+                        }
+
+                        /* Create the checkmark/indicator (hidden when not checked) */
+                        .checkmarkk:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+
+                        /* Show the checkmark when checked */
+                        .customm input:checked~.checkmarkk:after {
+                            display: block;
+                        }
+
+                        /* Style the checkmark/indicator */
+                        .customm .checkmarkk:after {
+                            left: 5.5px;
+                            top: 2px;
+                            width: 5px;
+                            height: 10px;
+                            border: solid white;
+                            border-width: 0 3px 3px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+
+                        #submit {
+                            width: 100%;
+                            padding: 10px 0px;
+                            @include local($fs: 14px, $fw: 600, $ff: $primary_ff, $clr: #fff);
+                            background: $primary_clr;
+                            border: 1px solid $primary_clr;
+                            transition: all linear .2s;
+                            -webkit-transition: all linear .2s;
+                            -moz-transition: all linear .2s;
+                            -ms-transition: all linear .2s;
+                            -o-transition: all linear .2s;
+                            margin-top: 20px;
+
+                            &:hover {
+                                background-color: #3c78b3;
+                            }
+                        }
+
+                        h6 {
+                            @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #666);
+                            text-align: center;
+                            padding-top: 25px;
+                            padding-bottom: 25px;
+                        }
+
+                        .socials {
+                            text-align: center;
+
+                            a {
+                                width: 32px;
+                                height: 32px;
+                                padding-top: 2px;
+                                border-radius: 50%;
+                                -webkit-border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -ms-border-radius: 50%;
+                                -o-border-radius: 50%;
+                                transition: all linear .2s;
+                                -webkit-transition: all linear .2s;
+                                -moz-transition: all linear .2s;
+                                -ms-transition: all linear .2s;
+                                -o-transition: all linear .2s;
+                            }
+
+                            .fb {
+                                border: 1px solid #1B4F9B;
+
+                                i {
+                                    color: #1B4F9B;
+                                    font-size: 13px;
+                                    transition: all linear .2s;
+                                    -webkit-transition: all linear .2s;
+                                    -moz-transition: all linear .2s;
+                                    -ms-transition: all linear .2s;
+                                    -o-transition: all linear .2s;
+                                }
+
+                                &:hover {
+                                    background-color: #1B4F9B;
+                                }
+
+                                &:hover i {
+                                    color: #fff;
+                                }
+                            }
+
+                            .tw {
+                                border: 1px solid #00ADEF;
+                                margin: 0 5px;
+
+                                i {
+                                    color: #00ADEF;
+                                    font-size: 13px;
+                                    transition: all linear .2s;
+                                    -webkit-transition: all linear .2s;
+                                    -moz-transition: all linear .2s;
+                                    -ms-transition: all linear .2s;
+                                    -o-transition: all linear .2s;
+                                }
+
+                                &:hover {
+                                    background-color: #00ADEF;
+                                }
+
+                                &:hover i {
+                                    color: #fff;
+                                }
+                            }
+
+                            .go {
+                                border: 1px solid #DD4B39;
+
+                                i {
+                                    color: #DD4B39;
+                                    font-size: 13px;
+                                    transition: all linear .2s;
+                                    -webkit-transition: all linear .2s;
+                                    -moz-transition: all linear .2s;
+                                    -ms-transition: all linear .2s;
+                                    -o-transition: all linear .2s;
+                                }
+
+                                &:hover {
+                                    background-color: #DD4B39;
+                                }
+
+                                &:hover i {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}        

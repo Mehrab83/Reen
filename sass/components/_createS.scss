@@ -1,0 +1,50 @@
+@import '../mixins/mixin';
+
+#create{
+    padding: 100px 0px;
+    .text{
+        span{
+            @include local($fs: 18px, $fw: 600, $ff: $primary_ff, $clr: $primary_clr);
+            
+        }
+        h6{
+            @include local($fs: 40px, $fw: 700, $ff: $primary_ff, $clr: #333);
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        p{
+            @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #666);
+            width: 83%;
+            line-height: 26px;
+            padding-bottom: 36px;
+        }
+        a{
+            padding: 15px 35px 15px 36px;
+            border: 2px solid #333;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            @include local($fs:14px,$fw:600,$ff:$primary_ff,$clr: #333);
+            transition: all linear .2s;
+            -webkit-transition: all linear .2s;
+            -moz-transition: all linear .2s;
+            -ms-transition: all linear .2s;
+            -o-transition: all linear .2s;
+            &:hover{
+                background-color: #333;
+                color: #fff;
+                
+            }
+        }
+    }
+    .image{
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        overflow: hidden;
+    }
+}

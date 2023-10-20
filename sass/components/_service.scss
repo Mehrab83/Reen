@@ -1,0 +1,62 @@
+@import '../mixins/mixin';
+
+#service{
+    padding-bottom: 90px;
+    h1{
+        @include local($fs: 34px, $fw: 700, $ff: $primary_ff, $clr: #222);
+        padding-bottom: 20px;
+    }
+    .accordion {
+        width: 550px;
+        .accordion-item {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid #eee;
+           
+            .accordion-button {
+                padding: 16px 0px 16px 20px;
+                @include local($fs: 18px, $fw: 600, $ff: $primary_ff, $clr: #333);
+                
+
+                &:not(.collapsed) {
+                    background-color: #fff;
+                    box-shadow: none;
+                }
+
+                &:focus {
+                    box-shadow: none;
+                }
+
+                &:not(.collapsed){
+                    color: $primary_clr;
+                }
+            }
+
+            .accordion-body {
+                padding: 2px 80px 14px 20px;
+                @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #333);
+
+            }
+
+        }
+        .collapsing {
+            height: 0;
+            overflow: hidden;
+            transition: $transition-collapse;
+            -webkit-transition: $transition-collapse;
+            -moz-transition: $transition-collapse;
+            -ms-transition: $transition-collapse;
+            -o-transition: $transition-collapse;
+        }
+    }
+    .image{
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        overflow: hidden;
+        
+    }
+}

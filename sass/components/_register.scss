@@ -1,0 +1,18 @@
+@import '../mixins/mixin';
+
+#registration{
+    padding: 60px 0px;
+    text-align: center;
+    h1{
+        @include local($fs: 34px, $fw: 600, $ff: $primary_ff, $clr: #FFF);
+        width: 600px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    a{
+        @include local($fs: 14px, $fw: 600, $ff: $primary_ff, $clr: #fff);
+        padding: 15px 30px;
+        border: 2px solid #FFF;
+        border-radius: 3px;
+    }
+}

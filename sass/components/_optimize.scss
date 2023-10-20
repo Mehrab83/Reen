@@ -1,0 +1,54 @@
+@import '../mixins/mixin';
+
+#optimize_award{
+    background-color: #fafafb;
+    padding: 100px 0px;
+    .optimize{
+        padding-bottom: 90px;
+        .image{
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            overflow: hidden;
+        }
+        .text{
+            h6{
+                @include local($fs: 34px, $fw: 700, $ff: $primary_ff, $clr: #222);
+                padding-bottom: 16px;
+                width: 580px;
+            }
+            p{
+                @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #666);  
+                padding-bottom: 31px;
+                width: 580px;
+            }
+            button{
+                @include local($fs:14px,$fw:600,$ff:$primary_ff,$clr: #FFF);
+                padding: 14px 35px;
+                background-color: #333;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+            }   
+        }
+    }
+    .award{
+        text-align: center;
+        h4{
+            @include local($fs: 30px, $fw: 600, $ff: $primary_ff, $clr: #222);
+            padding-bottom: 65px;
+        }
+        .image{
+            width: 105px;
+            margin: 0 auto;
+        }
+        p{
+            @include local($fs: 20px, $fw: 400, $ff: $primary_ff, $clr: #333);
+            padding-top: 10px;
+        }
+    }
+}

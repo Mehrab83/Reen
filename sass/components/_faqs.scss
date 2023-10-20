@@ -1,0 +1,66 @@
+@import '../mixins/mixin';
+
+#faq{
+    padding: 100px 0px;
+    .header{
+        text-align: center;
+        h3{
+            @include local($fs: 24px, $fw: 700, $ff: $primary_ff, $clr: #222);
+            padding-bottom: 10px;
+        }
+        span{
+            @include local($fs: 13px, $fw: 400, $ff: $primary_ff, $clr: #333);
+
+        }
+    }
+    h4{
+        text-align: center;
+        @include local($fs: 20px, $fw: 700, $ff: $primary_ff, $clr: #222);
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+    .accordion{
+        .accordion-item{
+            margin-bottom: 10px;
+            border: #f5f5f5 1px solid;
+            .accordion-header{
+                background-color: #f5f5f5;
+                
+                .accordion-button {
+                    padding: 16px 20px;
+                    @include local($fs: 16px, $fw: 600, $ff: $primary_ff, $clr: #333);
+                    background-color: #f5f5f5;
+                    &:not(.collapsed) {
+                        background-color: #f5f5f5;
+                         box-shadow: none;
+                    }
+    
+                    &:focus {
+                        box-shadow: none;
+                    }
+
+                    &:not(.collapsed){
+                        color: $primary_clr;
+                    }
+                }
+    
+            }
+            .accordion-body{
+                p{
+                    @include local($fs: 13px, $fw: 400, $ff: $primary_ff, $clr: #666);
+
+                }
+            }
+        }
+
+        .collapsing {
+            height: 0;
+            overflow: hidden;
+            transition: $transition-collapse;
+            -webkit-transition: $transition-collapse;
+            -moz-transition: $transition-collapse;
+            -ms-transition: $transition-collapse;
+            -o-transition: $transition-collapse;
+        }
+    }    
+}

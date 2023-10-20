@@ -1,0 +1,32 @@
+@import '../mixins/mixin';
+
+#error{
+    background-color: #f7f7f7;
+    padding: 145px 0px 100px;
+    .image{
+        width: 820px;
+        margin: 0 auto;
+        padding-bottom: 55px;
+    }
+    .text{
+        text-align: center;
+        h5{
+            @include local($fs: 30px, $fw: 700, $ff: $primary_ff, $clr: #333);
+
+            span{
+                @include local($fs: 30px, $fw: 700, $ff: $primary_ff, $clr: #f77c29);
+
+            }
+        }
+        p{
+            @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #999);
+            padding: 15px 0 35px;
+        }
+        a{
+            padding: 12px 29px;
+            background-color: #333;
+            @include local($fs: 14px, $fw: 600, $ff: $primary_ff, $clr: #fff);
+
+        }
+    }
+}

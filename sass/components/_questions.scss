@@ -1,0 +1,24 @@
+#question{
+    padding: 90px 0px;
+    .header{
+        text-align: center;
+        span{
+            @include local($fs: 18px, $fw: 600, $ff: $primary_ff, $clr: $primary_clr);
+            
+        }
+        h3{
+            @include local($fs: 34px, $fw: 700, $ff: $primary_ff, $clr: #222);
+            padding-top: 15px;
+            padding-bottom: 30px;
+        }
+    }
+    h6{
+        @include local($fs: 18px, $fw: 600, $ff: $primary_ff, $clr:#222);
+        padding-bottom: 20px;
+
+    }
+    p{
+        @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #666);
+        line-height: 26px;
+    }
+}

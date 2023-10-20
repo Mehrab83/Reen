@@ -1,0 +1,2731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ========Header part start========= -->
+    <header id="header">
+        <div class="header_one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="header_text">
+                            <p>WELCOME TO WOLMART STORE MESSAGE OR REMOVE IT!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="user_header">
+                            <div class="user_drp">
+                                <p>USD <i class="fa-solid fa-chevron-down"></i></p>
+                                <ul>
+                                    <li><span></span></li>
+                                    <li><a href="#">EUR</a></li>
+                                    <li><a href="#">USD</a></li>
+                                </ul>
+                            </div>
+                            <div class="user_drp">
+                                <p><img src="./images/i.flag.png" alt="img"> ENG <i
+                                        class="fa-solid fa-chevron-down"></i></p>
+                                <ul>
+                                    <li><span></span></li>
+                                    <li><a href="#"><img src="./images/i.flag.png" alt="img"> ENG</a></li>
+                                    <li><a href="#"><img src="./images/france.png" alt="img"> FRA</a></li>
+                                </ul>
+                            </div>
+                            <div class="user_acc">
+                                <ul>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Contact US</a></li>
+                                    <li><a href="">My Account</a></li>
+                                    <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="fa-regular fa-user"></i> Sign In/Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ++++Header modal start++++ -->
+            <!-- Modal -->
+            <div class="modal fade header_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+
+                        <button type="button" class="close_btn" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="fa-solid fa-xmark"></i></button>
+
+                        <div class="modal-body">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                        aria-selected="true">SIGN IN</button>
+                                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-profile" type="button" role="tab"
+                                        aria-controls="nav-profile" aria-selected="false">SIGN UP</button>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                    aria-labelledby="nav-home-tab" tabindex="0">...</div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                    aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ++++Header modal end++++ -->
+        </div>
+        <div class="header_two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="header_logo">
+                            <img src="./images/4e842fec-b924-4b3c-bf94-2fb58f07d0f9.png" class="img-fluid w-75"
+                                alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="header_search d-flex">
+                            <select>
+                                <option value="">All Categories</option>
+                                <option value="">Fashion</option>
+                                <option value="">Lifestyle</option>
+                                <option value="">Clothes</option>
+                                <option value="">Hobbies</option>
+                            </select>
+                            <div class="input">
+                                <input type="text" placeholder="Search In..">
+                            </div>
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="header_contact">
+                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="text">
+                                <a href="emti377@gmail.com" class="live_chat">Live Chat <span>or:</span></a>
+                                <p><a href="tel:0(800)123-456" class="number">0(800)123-456</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 cartt">
+                        <div class="header_cart">
+                            <div class="cart">
+                                <ul>
+                                    <li><a href=""><i class="fa-regular fa-heart"></i>
+                                            <span>Wishlist</span></a></li>
+                                    <li><a href=""><i class="fa-solid fa-scale-balanced"></i></i>
+                                            <span>Compare</span></a></li>
+                                    <li><a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                            aria-controls="offcanvasRight"><i class="fa-solid fa-bag-shopping"></i></i>
+                                            <span>Cart</span></a></li>
+                                </ul>
+
+
+                                <div class="offcanvas offcanvas-end cart_offcanvas" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">SHOPPING CART</h5>
+                                        <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">Close <i
+                                                class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="cart_detail">
+                                            <div class="item">
+                                                <div class="item_detail">
+                                                    <h5>Apple Super Notecom</h5>
+                                                    <p>1 × <span>$243.40</span></p>
+                                                </div>
+                                                <div class="item_picture">
+                                                    <img src="./images/Apple-Super-Notecom-1-300x338.jpg"
+                                                        class="img-fluid w-100" alt="">
+
+                                                </div>
+                                                <span class="close">&times;</span>
+                                            </div>
+                                            <div class="cart_total">
+                                                <div class="total_value">
+                                                    <h4>Subtotal: </h4><span>$243.40</span>
+                                                </div>
+                                                <div class="cart_btns">
+                                                    <div class="view_cart">
+                                                        <a href="#">VIEW CART</a>
+                                                    </div>
+                                                    <div class="checkout">
+                                                        <a href="#">CHECKOUT</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===========Header part end========= -->
+
+    <!-- ==========Menu part sstart========= -->
+    <section id="main_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="browse_menu">
+                        <div class="text_chev">
+                            <h4><i class="fa-solid fa-list"></i> BROWSE CATEGORIES</h4>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <div class="menu_list">
+                            <ul class="menu_items">
+                                <li><a href="#"><i class="fa-solid fa-shirt"></i> Fashion</a>
+                                    <div class="fashion_menu">
+                                        <ul class="fashion_list">
+                                            <li class="header_border">
+                                                <a href="#">
+                                                    <h6>WOMEN</h6>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">New Arrivals</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Best Sellers</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Trending</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Clothing</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shoes</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Bags</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Accessories</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Jewlery & Watches</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="fashion_list">
+                                            <li class="header_border">
+                                                <a href="#">
+                                                    <h6>MEN</h6>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">New Arrivals</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Best Sellers</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Trending</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Clothing</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shoes</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Bags</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Accessories</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Jewlery & Watches</a>
+                                            </li>
+                                        </ul>
+                                        <div class="fashion_img">
+                                            <img src="./images/fashion.jpg" class="w-100" alt="img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-house"></i> Home & Garden</a>
+                                    <div class="home_menu">
+                                        <div class="home_items">
+                                            <ul class="home_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>BEDROOM</h6>
+                                                    </a></li>
+                                                <li><a href="#">Beds, Frames & Bases</a></li>
+                                                <li><a href="#">Dressers</a></li>
+                                                <li><a href="#">Nightstands</a></li>
+                                                <li><a href="#">Kid's Beds & Headboards</a></li>
+                                                <li><a href="#">Armoires</a></li>
+                                            </ul>
+                                            <ul class="home_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>OFFICE</h6>
+                                                    </a></li>
+                                                <li><a href="#">Office Chairs</a></li>
+                                                <li><a href="#">Desks</a></li>
+                                                <li><a href="#">Bookcases</a></li>
+                                                <li><a href="#">File Cabinets</a></li>
+                                                <li><a href="#">Breakroom Tables</a></li>
+                                            </ul>
+                                            <ul class="home_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>LIVING ROOM</h6>
+                                                    </a></li>
+                                                <li><a href="#">Coffee Tables</a></li>
+                                                <li><a href="#">Chairs</a></li>
+                                                <li><a href="#">Tables</a></li>
+                                                <li><a href="#">Futons & Sofa Beds</a></li>
+                                                <li><a href="#">Cabinets & chests</a></li>
+                                            </ul>
+                                            <ul class="home_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>KITCHEN & DINING</h6>
+                                                    </a></li>
+                                                <li><a href="#">Dining Sets</a></li>
+                                                <li><a href="#">Kitchen Storage Cabinets</a></li>
+                                                <li><a href="#">Bashers Racks</a></li>
+                                                <li><a href="#">Dining Chairs</a></li>
+                                                <li><a href="#">Dining Room Tables</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="home_img">
+                                            <img src="./images/home.jpg" class="w-100 h-100" alt="img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-tv"></i> Electronics</a>
+                                    <div class="elect_menu">
+                                        <div class="elect_items">
+                                            <ul class="elect_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>LAPTOPS & COMPUTERS</h6>
+                                                    </a></li>
+                                                <li><a href="#">Desktop Computers</a></li>
+                                                <li><a href="#">Monitors</a></li>
+                                                <li><a href="#">Laptops</a></li>
+                                                <li><a href="#">Hard Drives & Storage</a></li>
+                                            </ul>
+                                            <ul class="elect_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>DIGITAL CAMERAS</h6>
+                                                    </a></li>
+                                                <li><a href="#">Digital SLR Cameras</a></li>
+                                                <li><a href="#">Sports & Action Cameras</a></li>
+                                                <li><a href="#">Camera Lenses</a></li>
+                                                <li><a href="#">Photo Printer</a></li>
+                                            </ul>
+                                            <ul class="elect_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>TV & VIDEO</h6>
+                                                    </a></li>
+                                                <li><a href="#">TVS</a></li>
+                                                <li><a href="#">Home Audio Speakers</a></li>
+                                                <li><a href="#">Projectors</a></li>
+                                                <li><a href="#">Media Streaming Devices</a></li>
+                                            </ul>
+                                            <ul class="elect_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>CELL PHONES</h6>
+                                                    </a></li>
+                                                <li><a href="#">Carrier Phones</a></li>
+                                                <li><a href="#">Unlocked Phones</a></li>
+                                                <li><a href="#">Phone & Cellphone Cases</a></li>
+                                                <li><a href="#">Cellphone Chargers</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="elect_img">
+                                            <img src="./images/elect_img.jpg" class="w-100 h-100" alt="img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-couch"></i> Furniture</a>
+                                    <div class="furn_items">
+                                        <div class="furn_item">
+                                            <div class="furn_item1">
+                                                <ul class="furn_list">
+                                                    <li class="header_border"><a href="#">
+                                                            <h6>FURNITURE</h6>
+                                                        </a></li>
+                                                    <li><a href="#">Sofas & Couches</a></li>
+                                                    <li><a href="#">Armchairs</a></li>
+                                                    <li><a href="#">Bed Frames</a></li>
+                                                    <li><a href="#">Beside Tables</a></li>
+                                                    <li><a href="#">Dressing Tables</a></li>
+                                                </ul>
+                                                <ul class="furn_list">
+                                                    <li class="header_border"><a href="#">
+                                                            <h6>LIGHTING</h6>
+                                                        </a></li>
+                                                    <li><a href="#">Light Bulbs</a></li>
+                                                    <li><a href="#">Lamps</a></li>
+                                                    <li><a href="#">Celling Lights</a></li>
+                                                    <li><a href="#">Wall Lights</a></li>
+                                                    <li><a href="#">Bathroom Lighting</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="furn_img">
+                                                <img src="./images/furn_img1.jpg" class="w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="furn_item">
+                                            <div class="furn_item1">
+                                                <ul class="furn_list">
+                                                    <li class="header_border"><a href="#">
+                                                            <h6>HOME ACCESSORIES</h6>
+                                                        </a></li>
+                                                    <li><a href="#">Decorative Accessories</a></li>
+                                                    <li><a href="#">Candals & Holders</a></li>
+                                                    <li><a href="#">Home Fragrance</a></li>
+                                                    <li><a href="#">Mirrors</a></li>
+                                                    <li><a href="#">Clocks</a></li>
+                                                </ul>
+                                                <ul class="furn_list">
+                                                    <li class="header_border"><a href="#">
+                                                            <h6>GARDEN & OUTDOORS</h6>
+                                                        </a></li>
+                                                    <li><a href="#">Garden Furniture</a></li>
+                                                    <li><a href="#">Lawn Mowers</a></li>
+                                                    <li><a href="#">Pressure Washers</a></li>
+                                                    <li><a href="#">All Garden Tools</a></li>
+                                                    <li><a href="#">Outdoor Dining</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="furn_img">
+                                                <img src="./images/furn_img2.jpg" class="w-100" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-heart-pulse"></i> Health & Beauty</a></li>
+                                <li><a href="#"><i class="fa-solid fa-gift"></i> Gift Ideas</a></li>
+                                <li><a href="#"><i class="fa-solid fa-gamepad"></i> Toy & Games</a></li>
+                                <li><a href="#"><i class="fa-solid fa-bowl-rice"></i> Cooking</a></li>
+                                <li><a href="#"><i class="fa-solid fa-mobile-screen-button"></i> Smart Phones</a></li>
+                                <li><a href="#"><i class="fa-solid fa-camera"></i> Cameras & Photo</a></li>
+                                <li><a href="#"><i class="fa-regular fa-gem"></i> Accessories</a></li>
+                            </ul>
+                            <div class="categories">
+                                <a href="#">VIEW ALL CATEGORIES <i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <nav class="navbar navbar-expand-lg  ">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="./shop.html">Shop</a>
+                                    <div class="shop_menu">
+                                        <ul class="shop_list">
+                                            <li>
+                                                <h5>SHOP PAGES</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">Banner With Sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Boxed Banner</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Full Width Banner</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Horizontal FilterHOT</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Off Canvas SidebarNEW</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Infinite Ajax Scroll</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Right Sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Full Width Sidebar</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="shop_list">
+                                            <li>
+                                                <h5>SHOP LAYOUTS</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">3 Columns Mode</a>
+                                            </li>
+                                            <li>
+                                                <a href="">4 Columns Mode</a>
+                                            </li>
+                                            <li>
+                                                <a href="">5 Columns Mode</a>
+                                            </li>
+                                            <li>
+                                                <a href="">6 Columns Mode</a>
+                                            </li>
+                                            <li>
+                                                <a href="">7 Columns Mode</a>
+                                            </li>
+                                            <li>
+                                                <a href="">8 Columns Mode</a>
+                                            </li>
+                                            <li>
+                                                <a href="">List Mode</a>
+                                            </li>
+                                            <li>
+                                                <a href="">List Mode With Sidebar</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="shop_list">
+                                            <li>
+                                                <h5>PRODUCT PAGES</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">Variable Product</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Featured & Sale</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Data In Accordion</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Data In Sections</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Image Swatch</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Extended Info</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Without Sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href="">360o & Video</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="shop_list">
+                                            <li>
+                                                <h5>PRODUCT LAYOUTS</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">DefaultHOT</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Vertical Thumbs</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Grid Images</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Masonry</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Gallery</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Sticky Info</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Sticky Thumbs</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Sticky Both</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav_link " href="./vendor.html">Vendor</a>
+                                    <div class="vendor_menu">
+                                        <ul class="vendor_list">
+                                            <li>
+                                                <h5>DOKAN</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">Store list</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Store</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Dashboard</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="vendor_list">
+                                            <li>
+                                                <h5>WC MARKETPLACE</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">Store list</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Store</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Dashboard</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="vendor_list">
+                                            <li>
+                                                <h5>WCFM</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">Store list</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Store</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Dashboard</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="vendor_list">
+                                            <li>
+                                                <h5>WC VENDORS</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">Store list</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Store</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Dashboard</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav_link" href="./blog.html">Blog</a>
+                                    <div class="blog_menu">
+                                        <ul class="blog_list">
+                                            <li><a href="#">Classic</a></li>
+                                            <li><a href="#">Listing</a></li>
+                                            <li><a href="#">Grid</a><i class="fa-solid fa-chevron-right"></i></li>
+                                            <li><a href="#">Masonry</a><i class="fa-solid fa-chevron-right"></i></li>
+                                            <li><a href="#">Mask</a><i class="fa-solid fa-chevron-right"></i></li>
+                                            <li><a href="#">Single Post</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav_link" href="#">Pages</a>
+                                    <div class="pages_menu">
+                                        <ul class="pages_list">
+                                            <li><a href="./about_us.html"> About Us</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="#">Become A Vendor</a></li>
+                                            <li><a href="#">FAQs</a></li>
+                                            <li><a href="#">Error 404</a></li>
+                                            <li><a href="#">Coming Soon</a></li>
+                                            <li><a href="#">Wishlist</a></li>
+                                            <li><a href="#">Cart</a></li>
+                                            <li><a href="#">Checkout</a></li>
+                                            <li><a href="#">Compare</a></li>
+                                            <li><a href="#">My Account</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav_link" href="#">Element</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-2">
+                    <div class="track">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Track Order</p>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="deals">
+                        <i class="fa-solid fa-tags"></i>
+                        <p>Daily Deals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========Menu part end========= -->
+    <!-- ===========Banner part start========= -->
+    <section id="banner">
+        <div class="banner_1" style="background: url(./images/banner.jpg) no-repeat center; background-size: cover;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 offset-4">
+                        <div class="banner_img">
+                            <img src="./images/shoe.png" class="img-fluid w-100 " alt="shoe">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="banner_item">
+                            <div class="banner_text" data-aos="fade-right" data-aos-delay="300">
+                                <h3>Custom <span>Men's</span></h3>
+                                <h4>RUNNING SHOES</h4>
+                                <p>Sale up to <span>30% OFF</span></p>
+                                <div class="banner_btn">
+                                    <button><a href="#">SHOP NOW <i class="fa-solid fa-arrow-right"></i></a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner_2" style="background: url(./images/banner_2.jpeg) no-repeat center; background-size: cover;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 offset-4">
+                        <div class="banner_item">
+                            <div class="banner_text">
+                                <h3>Mountain - <span>Climbing</span></h3>
+                                <h4>Hot & Backpack</h4>
+                                <p>Only until the end of this week</p>
+                                <div class="banner_btn">
+                                    <button><a href="#">SHOP NOW <i class="fa-solid fa-arrow-right"></i></a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="banner_img">
+                            <img src="./images/man.png" class="img-fluid w-100 h-100" alt="shoe">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner_3" style="background: url(./images/banner_3.jpeg) no-repeat center; background-size: cover;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 offset-4">
+                        <div class="banner_img">
+                            <img src="./images/roller_shoes.png" class="img-fluid w-100 h-100" alt="shoe">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="banner_item">
+                            <div class="banner_text">
+                                <p>TOP WEEKLY SELLER</p>
+                                <h3>TRENDING COLLECTION</h3>
+                                <h4>RUNNING SHOES</h4>
+                                <div class="banner_btn">
+                                    <button><a href="#">SHOP NOW <i class="fa-solid fa-arrow-right"></i></a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========Banner part end========= -->
+
+    <!-- ===========Widget part start========= -->
+    <section id="widget">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="widget_1">
+                        <div class="item">
+                            <i class="fa-solid fa-truck"></i>
+                            <div class="text">
+                                <p>Free Shipping & Returns</p>
+                                <span>For all orders over $99</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <div class="text">
+                                <p>Secure Payment</p>
+                                <span>We ensure seure payment</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="fa-solid fa-money-check-dollar"></i>
+                            <div class="text">
+                                <p>Money back Guarantee</p>
+                                <span>Any back within 30 days</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="fa-regular fa-comments"></i>
+                            <div class="text">
+                                <p>Customer Support</p>
+                                <span>Call or email us 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget_2">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="img_1">
+                                    <img src="./images/widgetimg_1.jpeg" class="img-fluid w-100" alt="1">
+                                    <div class="text">
+                                        <h4>Get up to <span>20% OFF</span></h4>
+                                        <h3>SPORTS OUTFIT <span>Collection</span></h3>
+                                        <p>Starting at <span>$170.00</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="img_2">
+                                    <img src="./images/widgetimg_2.jpeg" class="img-fluid w-100" alt="2">
+                                    <div class="text">
+                                        <h4>New Arrivals</h4>
+                                        <h3>ACCESSORIES <span>Collection</span></h3>
+                                        <p>Only From <span>$90.00</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========Widget part end========= -->
+
+    <!-- ===========Deals part start========= -->
+    <section id="deals">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="hot_deals">
+                        <div class="deal_header">
+                            <h2>Deals Hot of the Day</h2>
+                        </div>
+                        <div class="deals_slide">
+                            <div class="slide_item_1">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <!-- slide start  -->
+                                        <div id="carouselExampleCaptions" class="carousel slide">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1">
+                                                    <img src="./images/slide_1.jpg" class="img-fluid w-100  h-100"
+                                                        alt="1">
+                                                </button>
+                                                <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                    data-bs-slide-to="1" aria-label="Slide 2">
+                                                    <img src="./images/slide_2.jpg" class="img-fluid w-100  h-100"
+                                                        alt="2">
+                                                </button>
+                                                <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                    data-bs-slide-to="2" aria-label="Slide 3">
+                                                    <img src="./images/slide_3.jpg" class="img-fluid w-100  h-100"
+                                                        alt="3">
+                                                </button>
+                                                <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                    data-bs-slide-to="3" aria-label="Slide 4">
+                                                    <img src="./images/slide_4.jpg" class="img-fluid w-100  h-100"
+                                                        alt="4">
+                                                </button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img id="NZoomImg" data-NZoomscale="2"
+                                                        style="width: 100%;height: 100%" src="./images/slide_1.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img id="NZoomImg" data-NZoomscale="2"
+                                                        style="width: 100%;height: 100%" src="./images/slide_2.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img id="NZoomImg" data-NZoomscale="2"
+                                                        style="width: 100%;height: 100%" src="./images/slide_3.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img id="NZoomImg" data-NZoomscale="2"
+                                                        style="width: 100%;height: 100%" src="./images/slide_4.jpg"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <!-- slide end  -->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="deal_detail">
+                                            <div class="deals_header">
+                                                <h6>Coat Pool Comfort Jacket</h6>
+                                            </div>
+                                            <div class="deal_price">
+                                                <h5>$160.00 - $200.00</h5>
+                                                <div class="review">
+                                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                        class="fa-solid fa-star"></i> <span> ( 1 Reviews ) </span>
+                                                </div>
+                                                <div class="deal_size">
+                                                    <p>Size: </p><button>Extra
+                                                        Large</button><button>Large</button><button>Medium</button><button>Small</button>
+                                                </div>
+                                            </div>
+                                            <div class="deal_buttons">
+                                                <div class="qty">
+                                                    <label id="countLabel">1</label><button id="decreaseBtn"> <i
+                                                            class="fa-solid fa-minus"></i> </button><button
+                                                        id="increaseBtn"><i class="fa-solid fa-plus"></i></button>
+                                                </div>
+                                                <div class="deal_addBtn">
+                                                    <button><i class="fa-solid fa-bag-shopping"></i> ADD TO
+                                                        CART</button>
+                                                </div>
+                                                <button class="deal_buy">BUY NOW</button>
+                                            </div>
+                                            <div class="social_icons">
+                                                <div class="icons">
+                                                    <a href="" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+                                                    <a href="" class="tw"><i class="fa-brands fa-twitter"></i></a>
+                                                    <a href="#" class="pin"><i
+                                                            class="fa-brands fa-pinterest-p"></i></i></a>
+                                                    <a href="#" class="what"><i
+                                                            class="fa-brands fa-whatsapp"></i></i></a>
+                                                    <a href="#" class="link"><i
+                                                            class="fa-brands fa-linkedin-in"></i></i></a>
+                                                </div>
+                                                <div class="fav_compare">
+                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                    <button><a href=""><i
+                                                                class="fa-solid fa-scale-balanced"></i></a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide_item_2">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <!-- slide start  -->
+                                        <div id="carouselExampleCaptions2" class="carousel slide">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1">
+                                                    <img src="./images/slide2_1.jpeg" class="img-fluid w-100  h-100"
+                                                        alt="1">
+                                                </button>
+                                                <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                                    data-bs-slide-to="1" aria-label="Slide 2">
+                                                    <img src="./images/slide2_2.jpeg" class="img-fluid w-100  h-100"
+                                                        alt="2">
+                                                </button>
+                                                <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                                    data-bs-slide-to="2" aria-label="Slide 3">
+                                                    <img src="./images/slide2_3.jpeg" class="img-fluid w-100  h-100"
+                                                        alt="3">
+                                                </button>
+                                                <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                                    data-bs-slide-to="3" aria-label="Slide 4">
+                                                    <img src="./images/slide2_4.jpeg" class="img-fluid w-100  h-100"
+                                                        alt="4">
+                                                </button>
+                                                <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                                    data-bs-slide-to="4" aria-label="Slide 5">
+                                                    <img src="./images/slide2_5.jpeg" class="img-fluid w-100  h-100"
+                                                        alt="4">
+                                                </button>
+                                                <!-- <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="5" aria-label="Slide ">
+                                                    <img src="./images/slide2_6.jpeg" class="img-fluid w-100  h-100" alt="4">
+                                                  </button> -->
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img id="NZoomImg" data-NZoomscale="2"
+                                                        style="width: 100%;height: 100%" src="./images/slide2_1.jpeg"
+                                                        alt="">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img id="NZoomImg" data-NZoomscale="2"
+                                                        style="width: 100%;height: 100%" src="./images/slide2_2.jpeg"
+                                                        alt="">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img id="NZoomImg" data-NZoomscale="2"
+                                                        style="width: 100%;height: 100%" src="./images/slide2_3.jpeg"
+                                                        alt="">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img id="NZoomImg" data-NZoomscale="2"
+                                                        style="width: 100%;height: 100%" src="./images/slide2_4.jpeg"
+                                                        alt="">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img id="NZoomImg" data-NZoomscale="2"
+                                                        style="width: 100%;height: 100%" src="./images/slide2_5.jpeg"
+                                                        alt="">
+                                                </div>
+                                                <!-- <div class="carousel-item">
+                                                    <img id="NZoomImg" data-NZoomscale="2"
+                                                    style="width: 100%;height: 100%"
+                                                    src="./images/slide2_6.jpeg" alt="">
+                                                  </div> -->
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <!-- slide end  -->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="deal_detail">
+
+                                            <div class="deal_price">
+                                                <h5>$195.00 - $199.87</h5>
+                                                <div class="review">
+                                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                        class="fa-solid fa-star-half-stroke"></i> <span> ( 1 Reviews )
+                                                    </span>
+                                                </div>
+                                                <div class="deal_color">
+                                                    <p>Color: </p><button class="black"></button><button
+                                                        class="brown"></button><button class="orange"></button><button
+                                                        class="yellow"></button>
+                                                </div>
+                                                <div class="deal_size">
+                                                    <p>Size: </p><button>Extra
+                                                        Large</button><button>Large</button><button>Medium</button><button>Small</button>
+                                                </div>
+                                            </div>
+                                            <div class="deal_buttons">
+                                                <div class="qty">
+                                                    <label id="countLabel">1</label><button id="decreaseBtn"> <i
+                                                            class="fa-solid fa-minus"></i> </button><button
+                                                        id="increaseBtn"><i class="fa-solid fa-plus"></i></button>
+                                                </div>
+                                                <div class="deal_addBtn">
+                                                    <button><i class="fa-solid fa-bag-shopping"></i> ADD TO
+                                                        CART</button>
+                                                </div>
+                                                <button class="deal_buy">BUY NOW</button>
+                                            </div>
+                                            <div class="social_icons">
+                                                <div class="icons">
+                                                    <a href="" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+                                                    <a href="" class="tw"><i class="fa-brands fa-twitter"></i></a>
+                                                    <a href="#" class="pin"><i
+                                                            class="fa-brands fa-pinterest-p"></i></i></a>
+                                                    <a href="#" class="what"><i
+                                                            class="fa-brands fa-whatsapp"></i></i></a>
+                                                    <a href="#" class="link"><i
+                                                            class="fa-brands fa-linkedin-in"></i></i></a>
+                                                </div>
+                                                <div class="fav_compare">
+                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                    <button><a href=""><i
+                                                                class="fa-solid fa-scale-balanced"></i></a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="top_seller">
+                        <div class="seller_header">
+                            <h4>Top 20 Best Seller</h4>
+                        </div>
+                        <div class="seller_slide">
+                            <div class="slide_1">
+                                <div class="items">
+                                    <div class="item_1">
+                                        <div class="item_img">
+                                            <img src="./images/seller_1.jpeg" class="img-fluid w-100" alt="">
+                                            <img src="./images/seller_1.2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                        </div>
+                                        <div class="item_detail">
+                                            <h6>Kitchen Cooker</h6>
+                                            <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i></span>
+                                            <p>$150.60</p>
+                                        </div>
+                                    </div>
+                                    <div class="item_2">
+                                        <div class="item_img">
+                                            <img src="./images/seller_2.jpeg" class="img-fluid w-100" alt="">
+                                            <img src="./images/pixel_camera.jpeg" class="img-fluid w-100 img_top"
+                                                alt="">
+                                        </div>
+                                        <div class="item_detail">
+                                            <h6>Professional Pixel Camera</h6>
+                                            <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i></span>
+                                            <p>$215.68 <s>$230.45</s></p>
+                                        </div>
+                                    </div>
+                                    <div class="item_3">
+                                        <div class="item_img">
+                                            <img src="./images/seller_2.2.jpeg" class="img-fluid w-100" alt="">
+                                            <img src="./images/seller_3.jpeg" class="img-fluid w-100 img_top" alt="">
+                                        </div>
+                                        <div class="item_detail">
+                                            <h6>Sport Women's Wear</h6>
+                                            <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i></span>
+                                            <p>$220.20 <s>$232.62</s></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide_2">
+                                <div class="items">
+                                    <div class="item_1">
+                                        <div class="item_img">
+                                            <img src="./images/seller_3.2.jpeg" class="img-fluid w-100" alt="">
+                                            <img src="./images/seller_4.jpeg" class="img-fluid w-100 img_top" alt="">
+                                        </div>
+                                        <div class="item_detail">
+                                            <h6>Apple Super Notecom</h6>
+                                            <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i></span>
+                                            <p>$243.30 <s>$253.50</s></p>
+                                        </div>
+                                    </div>
+                                    <div class="item_2">
+                                        <div class="item_img">
+                                            <img src="./images/seller_4.2.jpeg" class="img-fluid w-100" alt="">
+                                            <img src="./images/seller_5.jpeg" class="img-fluid w-100 img_top" alt="">
+                                        </div>
+                                        <div class="item_detail">
+                                            <h6>Latest Speaker</h6>
+                                            <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i></span>
+                                            <p>$250.68</p>
+                                        </div>
+                                    </div>
+                                    <div class="item_3">
+                                        <div class="item_img">
+                                            <img src="./images/seller_5.2.jpeg" class="img-fluid w-100" alt="">
+                                            <img src="./images/watch_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                        </div>
+                                        <div class="item_detail">
+                                            <h6>Mens's Black Wrist Watch</h6>
+                                            <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i></span>
+                                            <p>$135.60 <s>155.70</s></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide_3">
+                                <div class="items">
+                                    <div class="item_1">
+                                        <div class="item_img">
+                                            <img src="./images/washh_machine_1.jpeg" class="img-fluid w-100" alt="">
+                                            <img src="./images/washh_machine_2.jpeg" class="img-fluid w-100 img_top"
+                                                alt="">
+                                        </div>
+                                        <div class="item_detail">
+                                            <h6>Wash Machine</h6>
+                                            <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i></span>
+                                            <p>$215.68</p>
+                                        </div>
+                                    </div>
+                                    <div class="item_2">
+                                        <div class="item_img">
+                                            <img src="./images/camera_1.jpeg" class="img-fluid w-100" alt="">
+                                            <img src="./images/camera_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                        </div>
+                                        <div class="item_detail">
+                                            <h6>Security Guard</h6>
+                                            <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i></span>
+                                            <p>$320.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="item_3">
+                                        <div class="item_img">
+                                            <img src="./images/tv_1.jpeg" class="img-fluid w-100" alt="">
+                                            <img src="./images/tv_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                        </div>
+                                        <div class="item_detail">
+                                            <h6>HD Television</h6>
+                                            <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                    class="fa-solid fa-star"></i></span>
+                                            <p>$450.68 <s>$500.00</s></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========Deals part end========= -->
+
+    <!-- ===========categories part start========= -->
+    <section id="categories">
+        <div class="container">
+            <div class="top_cat">
+                <h3>Top Categories Of The Month</h3>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="product">
+                            <div class="img">
+                                <img src="./images/cate_1.jpeg" alt="" class="img-fluid w-100">
+                            </div>
+                            <div class="cat_text">
+                                <div class="text">
+                                    <p>Fashion</p>
+                                    <a href="">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="product">
+                            <div class="img">
+                                <img src="./images/cate_2.jpeg" alt="" class="img-fluid w-100">
+                            </div>
+                            <div class="cat_text">
+                                <div class="text">
+                                    <p>Furniture</p>
+                                    <a href="">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="product">
+                            <div class="img">
+                                <img src="./images/cate_3.jpeg" alt="" class="img-fluid w-100">
+                            </div>
+                            <div class="cat_text">
+                                <div class="text">
+                                    <p>Shoes</p>
+                                    <a href="">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="product">
+                            <div class="img">
+                                <img src="./images/cate_4.jpeg" alt="" class="img-fluid w-100">
+                            </div>
+                            <div class="cat_text">
+                                <div class="text">
+                                    <p>Sports</p>
+                                    <a href="">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="product">
+                            <div class="img">
+                                <img src="./images/cate_6.jpeg" alt="" class="img-fluid w-100">
+                            </div>
+                            <div class="cat_text">
+                                <div class="text">
+                                    <p>Games</p>
+                                    <a href="">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="product">
+                            <div class="img">
+                                <img src="./images/cate_5.jpeg" alt="" class="img-fluid w-100">
+                            </div>
+                            <div class="cat_text">
+                                <div class="text">
+                                    <p>Laptops</p>
+                                    <a href="">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========categories part end========= -->
+
+    <!-- ===========popular part start========= -->
+    <section id="popular">
+        <div class="container">
+            <div class="common_header">
+                <h2>Popular Department</h2>
+                <a href="#">More Products <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <div class="popular_products">
+                <div class="row gy-3">
+                    <div class="col-lg-12">
+                        <div class="products">
+                            <div class="product_1">
+                                <div class="product_media">
+                                    <div class="product_img">
+                                        <img src="./images/product_1.jpeg" class="img-fluid w-100" alt="">
+                                        <img src="./images/product_1.5.jpeg" class="img-fluid w-100 img_top" alt="">
+                                    </div>
+                                    <div class="hover_btns">
+                                        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product_detail">
+                                    <h6>Classic Hat</h6>
+                                    <div class="review">
+                                        <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                    </div>
+                                    <div class="price">
+                                        <p>$53.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_2">
+                                <div class="product_media">
+                                    <div class="product_img">
+                                        <img src="./images/bag_1.jpeg" class="img-fluid w-100" alt="">
+                                        <img src="./images/bag_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                    </div>
+                                    <div class="hover_btns">
+                                        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product_detail">
+                                    <h6>Women's White Handbag</h6>
+                                    <div class="review">
+                                        <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> (0 Reviews)</span>
+                                    </div>
+                                    <div class="price">
+                                        <p>$26.26</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_3">
+                                <div class="product_media">
+                                    <div class="product_img">
+                                        <img src="./images/phone_1.jpeg" class="img-fluid w-100" alt="">
+                                        <img src="./images/phone_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                    </div>
+                                    <div class="hover_btns">
+                                        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                    <div class="label">
+                                        <label>7% OFF</label>
+                                    </div>
+                                </div>
+                                <div class="product_detail">
+                                    <h6>Multi Functional Apple iPho...</h6>
+                                    <div class="review">
+                                        <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> (0 Reviews)</span>
+                                    </div>
+                                    <div class="price">
+                                        <p>$136.26</p><s> $145.90</s>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_4">
+                                <div class="product_media">
+                                    <div class="product_img">
+                                        <img src="./images/towel_2.jpeg" class="img-fluid w-100" alt="">
+                                        <img src="./images/towel_1.jpeg" class="img-fluid w-100 img_top" alt="">
+                                    </div>
+                                    <div class="hover_btns">
+                                        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="product_detail">
+                                    <h6>Fashion Blue Towel</h6>
+                                    <div class="review">
+                                        <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> (0 Reviews)</span>
+                                    </div>
+                                    <div class="price">
+                                        <p>$26.55-$29.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_5">
+                                <div class="product_media">
+                                    <div class="product_img">
+                                        <img src="./images/seller_3.2.jpeg" class="img-fluid w-100" alt="">
+                                        <img src="./images/seller_4.jpeg" class="img-fluid w-100 img_top" alt="">
+                                    </div>
+                                    <div class="hover_btns">
+                                        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                    <div class="label">
+                                        <label>4% OFF</label>
+                                    </div>
+                                </div>
+                                <div class="product_detail">
+                                    <h6>Apple Super Notecom</h6>
+                                    <div class="review">
+                                        <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> (0 Reviews)</span>
+                                    </div>
+                                    <div class="price">
+                                        <p>$243.30</p><s> $253.50</s>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="products">
+                            <div class="product_6">
+                                <div class="product_media">
+                                    <div class="product_img">
+                                        <img src="./images/comforter_1.jpeg" class="img-fluid w-100" alt="">
+                                        <img src="./images/comforter_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                    </div>
+                                    <div class="hover_btns">
+                                        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product_detail">
+                                    <h6>Women's Comforter</h6>
+                                    <div class="review">
+                                        <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                    </div>
+                                    <div class="price">
+                                        <p>$33.00-$33.26</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_7">
+                                <div class="product_media">
+                                    <div class="product_img">
+                                        <img src="./images/speaker_1.jpeg" class="img-fluid w-100" alt="">
+                                        <img src="./images/speaker_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                    </div>
+                                    <div class="hover_btns">
+                                        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product_detail">
+                                    <h6>Multi-Colorful Music</h6>
+                                    <div class="review">
+                                        <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> (0 Reviews)</span>
+                                    </div>
+                                    <div class="price">
+                                        <p>$260.59-$297.83</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_8">
+                                <div class="product_media">
+                                    <div class="product_img">
+                                        <img src="./images/backpack_1.jpeg" class="img-fluid w-100" alt="">
+                                        <img src="./images/backpack_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                    </div>
+                                    <div class="hover_btns">
+                                        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="product_detail">
+                                    <h6>Comfortable Backpack</h6>
+                                    <div class="review">
+                                        <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> (0 Reviews)</span>
+                                    </div>
+                                    <div class="price">
+                                        <p>$45.90</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_9">
+                                <div class="product_media">
+                                    <div class="product_img">
+                                        <img src="./images/usb_1.jpeg" class="img-fluid w-100" alt="">
+                                        <img src="./images/usb_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                    </div>
+                                    <div class="hover_btns">
+                                        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="product_detail">
+                                    <h6>Data Transformer Tool</h6>
+                                    <div class="review">
+                                        <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> (0 Reviews)</span>
+                                    </div>
+                                    <div class="price">
+                                        <p>$64.47</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_10">
+                                <div class="product_media">
+                                    <div class="product_img">
+                                        <img src="./images/hairdye_1.jpeg" class="img-fluid w-100" alt="">
+                                        <img src="./images/hairdye_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                    </div>
+                                    <div class="hover_btns">
+                                        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                    <div class="label">
+                                        <label>4% OFF</label>
+                                    </div>
+                                </div>
+                                <div class="product_detail">
+                                    <h6>Women's Hairdye</h6>
+                                    <div class="review">
+                                        <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                                class="fa-solid fa-star"></i> (0 Reviews)</span>
+                                    </div>
+                                    <div class="price">
+                                        <p>$173.84</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popular_banner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="img_1">
+                            <img src="./images/pop_banner_1.jpeg" class="img-fluid w-100" alt="1">
+                            <div class="text">
+                                <h4>NATURAL PROCESS</h4>
+                                <h3>Cosmetic Makeup Professional</h3>
+                                <a href="#">SHOP NOW <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="img_2">
+                            <img src="./images/pop_banner_2.jpeg" class="img-fluid w-100" alt="1">
+                            <div class="text">
+                                <h4>TRENDING NOW</h4>
+                                <h3>Women's Lifestyle Collection</h3>
+                                <a href="#">SHOP NOW <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========popular part end========= -->
+
+    <!-- ===========apparel part start========= -->
+    <section id="apparel">
+        <div class="container">
+            <div class="common_header">
+                <h2>Clothing & Apparel</h2>
+                <a href="#">More Products <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="apparel_banner">
+                        <img src="./images/apparel_ban.jpeg" class="img-fluid w-100" alt="">
+                        <div class="details">
+                            <h6>Weekend Sale</h6>
+                            <h4>NEW ARRIVALS <span>Collection</span></h4>
+                            <button>SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="apparel_products">
+                        <div class="product_1">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/apparel_1.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/apparel_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Men's Clothing</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (0 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$23.99</p><s>$25.68</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_2">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/apparel_3.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/apparel_4.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Women's Fashion Handb..</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$25.68</p> <s>$25.89</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_3">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/apparel_5.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/apparel_6.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Black Winter Skating</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$40.86</p> <s>$45.89</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_4">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/apparel_8.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/apparel_7.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Sport Women's Wear</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$220.20</p> <s>$232.62</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_5">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/apparel_9.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/apparel_10.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Best Travel Bag</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$25.68</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_6">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/apparel_11.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/apparel_12.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Gray Leather Shoes</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$26.88</p> <s>$27.89</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_7">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/apparel_13.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/apparel_14.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Men's Black Wrist Watch</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$135.60</p> <s>$155.70</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_8">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/apparel_15.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/apparel_16.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Classic Hat</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$195.00 - $199.87</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========apparel part end========= -->
+
+    <!-- ===========electric part start========= -->
+    <section id="electric">
+        <div class="container">
+            <div class="common_header">
+                <h2>Consumer Electric</h2>
+                <a href="#">More Products <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="electric_banner">
+                        <img src="./images/electric_banner.jpeg" class="img-fluid w-100" alt="">
+                        <div class="details">
+                            <h6>New Collection</h6>
+                            <h4>TOP CAMERA <span>Mirrorless</span></h4>
+                            <button>SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="electric_products">
+                        <div class="product_1">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/electric_1.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/electric_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Professional Pixel Camera</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (1 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$215.68</p><s>$230.45</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_2">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/electric_3.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/electric_4.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Wash Machine</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$215.68</p>
+                                    <!-- <s>$25.89</s> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_3">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/electric_5.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/electric_6.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>HD Television</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$450.68</p> <s>$500.00</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_4">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/electric_8.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/electric_7.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Data Transformer Tool</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (1 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$64.47</p>
+                                    <!-- <s>$232.62</s> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_5">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/seller_4.2.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/seller_5.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Latest Speaker</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (0 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$250.68</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_6">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/camera_1.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/camera_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Security Guard</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$320.00</p>
+                                    <!-- <s>$27.89</s> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_7">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/electric_13.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/electric_14.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>USB Receipt</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$26.89</p> <s>$29.79</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_8">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/phone_1.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/phone_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Multi Functional Apple iP</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$136.26</p> <s>$145.90</s>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========electric part end========= -->
+
+    <!-- ===========home part start========= -->
+    <section id="home">
+        <div class="container">
+            <div class="elementor_banner"
+                style="background: url(./images/elementor_banner.jpeg) no-repeat center; background-size: cover;">
+                <div class="text">
+                    <div class="first">
+                        <h1>25</h1>
+                        <div class="per">
+                            <p>%</p>
+                            <span>OFF</span>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <h5>For Today's Fashion</h5>
+                        <p>Use code <span>Black 12345</span> to get best offer.</p>
+                    </div>
+                </div>
+                <button>SHOP NOW <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <div class="common_header">
+                <h2>Home Garden & Kitchen</h2>
+                <a href="#">More Products <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="home_banner">
+                        <img src="./images/home_ban.jpeg" class="img-fluid w-100" alt="">
+                        <div class="details">
+                            <h6>Deals And Promotions</h6>
+                            <h4>TRENDING <span>House Utensil</span></h4>
+                            <button>SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="home_products">
+                        <div class="product_1">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/home_1.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/home_2.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Home Sofa</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (1 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$215.68</p><s>$230.45</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_2">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/home3.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/home4.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Kitchen Table</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$215.68</p>
+                                    <!-- <s>$25.89</s> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_3">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/home5.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/home6.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Table Lamp</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$450.68</p> <s>$500.00</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_4">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/home7.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/home8.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Latest Chair</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (1 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$64.47</p>
+                                    <!-- <s>$232.62</s> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_5">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/home9.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/home10.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Electric Rice-Cooker</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (0 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$250.68</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_6">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/home11.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/home12.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Kitchen Cooker</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$320.00</p>
+                                    <!-- <s>$27.89</s> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_7">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/home13.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/home14.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Electric Frying Pan</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$26.89</p> <s>$29.79</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_8">
+                            <div class="product_media">
+                                <div class="product_img">
+                                    <img src="./images/home15.jpeg" class="img-fluid w-100" alt="">
+                                    <img src="./images/home16.jpeg" class="img-fluid w-100 img_top" alt="">
+                                </div>
+                                <div class="hover_btns">
+                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                            </div>
+                            <div class="product_detail">
+                                <h6>Automatic Crusher</h6>
+                                <div class="review">
+                                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> (4 Reviews)</span>
+                                </div>
+                                <div class="price">
+                                    <p>$136.26</p> <s>$145.90</s>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========home part end========= -->
+
+    <!-- ===========client part start========= -->
+    <section id="client">
+        <div class="container">
+            <div class="common_header">
+                <h2>Our Clients</h2>
+            </div>
+            <div class="client_list">
+                <div class="row gx-0">
+                    <div class="col-lg-2">
+                        <div class="image">
+                            <img src="./images/client1.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="image">
+                            <img src="./images/client2.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="image">
+                            <img src="./images/client3.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="image">
+                            <img src="./images/client4.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="image">
+                            <img src="./images/client5.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="image">
+                            <img src="./images/client6.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="image">
+                            <img src="./images/client7.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="image">
+                            <img src="./images/client8.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="image">
+                            <img src="./images/client9.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="image">
+                            <img src="./images/client10.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="image">
+                            <img src="./images/client11.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="image">
+                            <img src="./images/client12.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========client part end========= -->
+    <!-- ===========blog part start========= -->
+    <section id="blog">
+        <div class="container">
+            <div class="common_header">
+                <h2>From Our Blog</h2>
+                <a href="#">View All Articles <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <div class="blog_lists">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="list_1">
+                            <div class="image">
+                                <img src="./images/blog1.jpeg" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="text">
+                                <ul>
+                                    <li><span>by </span></li>
+                                    <li>
+                                        <h5>John Doe</h5>
+                                    </li>
+                                    <li>
+                                        <p>- 03. 05. 2021</p>
+                                    </li>
+                                </ul>
+                                <p>Aliquam tincidunt mauris eurisus</p>
+                                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="list_1">
+                            <div class="image">
+                                <img src="./images/blog2.jpeg" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="text">
+                                <ul>
+                                    <li><span>by </span></li>
+                                    <li>
+                                        <h5>John Doe</h5>
+                                    </li>
+                                    <li>
+                                        <p>- 03. 05. 2021</p>
+                                    </li>
+                                </ul>
+                                <p>Cras ornare tristique elit</p>
+                                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="list_1">
+                            <div class="image">
+                                <img src="./images/blog3.jpeg" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="text">
+                                <ul>
+                                    <li><span>by </span></li>
+                                    <li>
+                                        <h5>John Doe</h5>
+                                    </li>
+                                    <li>
+                                        <p>- 03. 05. 2021</p>
+                                    </li>
+                                </ul>
+                                <p>Vivamus vestibulum ntulla nec ante</p>
+                                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="list_1">
+                            <div class="image">
+                                <img src="./images/blog4.jpeg" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="text">
+                                <ul>
+                                    <li><span>by </span></li>
+                                    <li>
+                                        <h5>John Doe</h5>
+                                    </li>
+                                    <li>
+                                        <p>- 03. 05. 2021</p>
+                                    </li>
+                                </ul>
+                                <p>Fusce lacinia arcuet nulla</p>
+                                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========blog part end========= -->
+    <!-- ===========recent part start========= -->
+    <section id="recent">
+        <div class="container">
+            <div class="common_header">
+                <h2>Your Recent Views</h2>
+            </div>
+            <div class="recent_products">
+                <p>There's no item that you viewed recently.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ===========recent part end========= -->
+    <!-- ===========newsletter part start========= -->
+    <section id="newsletter">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-5">
+                    <div class="details">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div class="text">
+                            <h6>SUBSCRIBE TO OUR NEWSLETTER</h6>
+                            <p>Get all the latest information on Events, Sales and Offers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="mail">
+                        <input id="user_email" name="user[email]" placeholder="Your E-mail Address" type="email" />
+                        <button type="submit" value="SUBSCRIBE">
+                            SUBSCRIBE <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ===========newsletter part end========= -->
+    <!-- ===========footer part start========= -->
+    <footer>
+        <div class="container">
+            <div class="about_us">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="logo">
+                            <img src="./images/4e842fec-b924-4b3c-bf94-2fb58f07d0f9.png" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Got Question? Call us 24/7</h6>
+                            <a href="tel:#" class="telephone">1-800-570-7777</a>
+                            <p>Register now to get updates on pronot get
+                                up ions & coupons ster now toon.</p>
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="tw"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="int"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="yt"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" class="pint"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex justify-content-center">
+                        <div class="company">
+                            <h3>COMPANY</h3>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Team Member</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Affilate</a></li>
+                                <li><a href="#">Order History</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex justify-content-center">
+                        <div class="account">
+                            <h3>MY ACCOUNT</h3>
+                            <ul>
+                                <li><a href="#">Track My Order</a></li>
+                                <li><a href="#">View Cart</a></li>
+                                <li><a href="#">Sign In</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">My Wishlist</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex justify-content-center">
+                        <div class="service">
+                            <h3>CUSTOMER SERVICE</h3>
+                            <ul>
+                                <li><a href="#">Payment Methods</a></li>
+                                <li><a href="#">Money-back guarantee!</a></li>
+                                <li><a href="#">Products Returns</a></li>
+                                <li><a href="#">Support Center</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Term and Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product_list">
+                <div class="container">
+                    <div class="list">
+                        <h4>Consumer Electric: </h4>
+                        <ul>
+                            <li><a href="#"> TV Television</a></li>
+                            <li><a href="#"> Air Condition</a></li>
+                            <li><a href="#"> Refrigator</a></li>
+                            <li><a href="#"> Washing Machine</a></li>
+                            <li><a href="#"> Audio Speaker</a></li>
+                            <li><a href="#"> Security Camera</a></li>
+                            <li><a href="#"> View all</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Clothing & Apparel: </h4>
+                        <ul>
+                            <li><a href="#">Men T-shirt </a></li>
+                            <li><a href="#">Dresses </a></li>
+                            <li><a href="#">Men's Sneaker </a></li>
+                            <li><a href="#">Leather Backpack </a></li>
+                            <li><a href="#">Watches </a></li>
+                            <li><a href="#">Jeans </a></li>
+                            <li><a href="#">Sunglasses </a></li>
+                            <li><a href="#">Boots </a></li>
+                            <li><a href="#">Rayban </a></li>
+                            <li><a href="#">Accessories </a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Home, Garden & Kitchen: </h4>
+                        <ul>
+                            <li><a href="#">Sofa </a></li>
+                            <li><a href="#">Chair </a></li>
+                            <li><a href="#">Bed Room </a></li>
+                            <li><a href="#">Living Room </a></li>
+                            <li><a href="#">Cookware </a></li>
+                            <li><a href="#">Utensil </a></li>
+                            <li><a href="#">Blender </a></li>
+                            <li><a href="#">Garden Equipments </a></li>
+                            <li><a href="#">Decor </a></li>
+                            <li><a href="#">Library </a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Health & Beauty: </h4>
+                        <ul>
+                            <li><a href="#">Skin Care </a></li>
+                            <li><a href="#">Body Shower </a></li>
+                            <li><a href="#">Makeup </a></li>
+                            <li><a href="#">Hair Care </a></li>
+                            <li><a href="#">Lipstick </a></li>
+                            <li><a href="#">Perfume </a></li>
+                            <li><a href="#">View all </a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Jewelry & Watches: </h4>
+                        <ul>
+                            <li><a href="#"> Necklace</a></li>
+                            <li><a href="#">Pendant </a></li>
+                            <li><a href="#">Diamond Ring </a></li>
+                            <li><a href="#">Silver Earing</a></li>
+                            <li><a href="#">Leather Watcher </a></li>
+                            <li><a href="#">Rolex</a></li>
+                            <li><a href="#">Gucci </a></li>
+                            <li><a href="#">Australian Opal </a></li>
+                            <li><a href="#"> Ammolite</a></li>
+                            <li><a href="#">Sun Pyrite </a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Computer & Technologies: </h4>
+                        <ul>
+                            <li><a href="#">Laptop </a></li>
+                            <li><a href="#">iMac </a></li>
+                            <li><a href="#">Smartphone </a></li>
+                            <li><a href="#">Tablet </a></li>
+                            <li><a href="#">Apple </a></li>
+                            <li><a href="#"> Asus</a></li>
+                            <li><a href="#">Drone </a></li>
+                            <li><a href="#">Wireless Speaker </a></li>
+                            <li><a href="#">Game Controller </a></li>
+                            <li><a href="#">View all </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <p>Copyright © 2023 Wolmart Store. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end align-items-center">
+                        <p>We're using safe payment for</p>
+                        <div class="image"><img src="./images/maestro.png" class="img-fluid w-100" alt="img"></div>
+                        <div class="image"><img src="./images/discover.png" class="img-fluid w-100" alt="img"></div>
+                        <div class="image"><img src="./images/visa.png" class="img-fluid w-100" alt="img"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ===========footer part end========= -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="js/deals_slide.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

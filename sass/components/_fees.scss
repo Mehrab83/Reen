@@ -1,0 +1,36 @@
+#fee{
+    padding: 95px 0px;
+    .heading{
+        text-align: center;
+        span{
+            @include local($fs: 18px, $fw: 600, $ff: $primary_ff, $clr: $primary_clr);
+        }
+        h4{
+            @include local($fs: 34px, $fw: 700, $ff: $primary_ff, $clr: #222);
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        p{
+            @include local($fs: 14px, $fw: 400, $ff: $primary_ff, $clr: #666);
+            
+        }
+    }
+    .fee_count{
+        text-align: center;
+        h1{
+            @include local($fs: 90px, $fw: 800, $ff: $primary_ff, $clr: #ccc);
+            .counter{
+                @include local($fs: 90px, $fw: 800, $ff: $primary_ff, $clr: #ccc);
+
+            }
+        }
+    }
+    span{
+        @include local($fs: 20px, $fw: 700, $ff: $primary_ff, $clr: #333);
+    }
+    p{
+        @include local($fs:14px, $fw: 400, $ff: $primary_ff, $clr: #666);  
+        width: 280px;
+        margin: 0 auto;
+    }
+}
